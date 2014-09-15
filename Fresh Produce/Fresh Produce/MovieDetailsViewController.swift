@@ -10,9 +10,12 @@ import UIKit
 
 class MovieDetailsViewController: UIViewController {
 
+    var movie: Movie?
+    @IBOutlet weak var detailsTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        detailsTextView.text = movie!.synopsis()
         // Do any additional setup after loading the view.
     }
 
