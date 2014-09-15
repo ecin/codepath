@@ -21,10 +21,12 @@ class Movie {
             
             var data: NSData = NSURLConnection.sendSynchronousRequest(request, returningResponse: &response, error: &error)!
             
-            let dictionary = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: &error) as NSDictionary
-            let movies = dictionary["movies"] as Array<NSDictionary>
-            for (data) in movies {
-                Cache.append(Movie(data: data))
+            if (error == nil) {
+                let dictionary = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: &error) as NSDictionary
+                let movies = dictionary["movies"] as Array<NSDictionary>
+                for (data) in movies {
+                    Cache.append(Movie(data: data))
+                }
             }
         }
         
@@ -46,5 +48,5 @@ class Movie {
     }
     
     func title() -> String { return self.data["title"]! as NSString }
-    func description() -> String { return self.data["description"]! as NSString }
+    func synopsis() -> String { return self.data["synopsis"]! as NSString }
 }

@@ -2,7 +2,7 @@
 //  MovieDetailsViewController.swift
 //  Fresh Produce
 //
-//  Created by Nelson Crespo on 9/14/14.
+//  Created by Nelson Crespo on 9/15/14.
 //  Copyright (c) 2014 Copypastel. All rights reserved.
 //
 
@@ -10,11 +10,6 @@ import UIKit
 
 class MovieDetailsViewController: UIViewController {
 
-    override func loadView() {
-        self.view = UIView(frame: CGRectZero)
-        self.view.backgroundColor = UIColor.redColor()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

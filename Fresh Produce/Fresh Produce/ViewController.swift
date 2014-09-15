@@ -36,7 +36,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let detailsViewController = MovieDetailsViewController(nibName: nil, bundle: nil)
+        let detailsViewController = self.storyboard?.instantiateViewControllerWithIdentifier("details") as UIViewController
+//        let movie = Movie.get(indexPath.row)
+//        detailsViewController.movie = movie
         self.navigationController?.pushViewController(detailsViewController, animated: true)
     }
 }
