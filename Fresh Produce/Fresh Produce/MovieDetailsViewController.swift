@@ -12,10 +12,12 @@ class MovieDetailsViewController: UIViewController {
 
     var movie: Movie?
     @IBOutlet weak var detailsTextView: UITextView!
+    @IBOutlet weak var posterImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         detailsTextView.text = movie!.synopsis()
+        posterImageView.image = movie!.poster(size: Movie.ImageSize.Original)
         // Do any additional setup after loading the view.
     }
 

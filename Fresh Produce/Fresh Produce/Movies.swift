@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 private var Cache: [Movie] = []
 private let Key = "t2quq5swmxtkux9ebfurexje"
@@ -49,4 +50,31 @@ class Movie {
     
     func title() -> String { return self.data["title"]! as NSString }
     func synopsis() -> String { return self.data["synopsis"]! as NSString }
+    
+    enum ImageSize {
+        case Detailed, Original, Profile, Thumbnail
+    }
+    
+    private func posters() -> NSDictionary {
+        return self.data["posters"]! as NSDictionary
+    }
+    
+    func poster(size: ImageSize = ImageSize.Thumbnail) -> UIImage {
+        var uri = posters()["original"]! as String
+        
+        switch size {
+            case .Detailed:
+                uri = uri.stringByReplacingOccurrencesOfString("tmb", withString: "det")
+            case .Original:
+                uri = uri.stringByReplacingOccurrencesOfString("tmb", withString: "ori")
+            case .Profile:
+                uri = uri.stringByReplacingOccurrencesOfString("tmb", withString: "pro")
+            case .Thumbnail:
+                break
+        }
+        
+        var url = NSURL(string: uri)
+        var data = NSData(contentsOfURL: url)
+        return UIImage(data: data)
+    }
 }
