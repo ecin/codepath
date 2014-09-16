@@ -32,6 +32,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = movieTableView.dequeueReusableCellWithIdentifier("com.copypastel.freshproduce.moviecell") as MovieTableViewCell
         let movie = Movie.get(indexPath.row)
         cell.titleLabel?.text = movie.title()
+        cell.posterImageView?.image = movie.poster(size: Movie.ImageSize.Profile)
         return cell
     }
     
