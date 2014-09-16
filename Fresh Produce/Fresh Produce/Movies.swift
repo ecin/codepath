@@ -34,6 +34,11 @@ class Movie {
         return Cache
     }
     
+    class func refresh() -> [Movie] {
+        Cache.removeAll(keepCapacity: true)
+        return all()
+    }
+    
     class func count() -> Int {
         return Cache.count
     }

@@ -11,10 +11,15 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var movieTableView: UITableView!
+    var refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        self.movieTableView.addSubview(refreshControl)
+
         // Warm up cache
         Movie.all()
     }
@@ -41,6 +46,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let movie = Movie.get(indexPath.row)
         detailsViewController.movie = movie
         self.navigationController?.pushViewController(detailsViewController, animated: true)
+    }
+    
+    func refresh(sender: AnyObject) {
+        Movie.refresh()
+        refreshControl.endRefreshing()
     }
 }
 
