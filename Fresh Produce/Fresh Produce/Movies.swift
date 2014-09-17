@@ -14,7 +14,7 @@ private let Key = "t2quq5swmxtkux9ebfurexje"
 private let Endpoint = "http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json"
 
 class Movie {
-    class func all() -> [Movie] {
+    class func all(onError: (()->Void) = {}) -> [Movie] {
         if Cache.isEmpty {
             let request = NSMutableURLRequest(URL: NSURL.URLWithString("\(Endpoint)?apikey=\(Key)"))
             var response: NSURLResponse?
@@ -28,6 +28,8 @@ class Movie {
                 for (data) in movies {
                     Cache.append(Movie(data: data))
                 }
+            } else {
+                onError()
             }
         }
         

@@ -22,7 +22,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.movieTableView.addSubview(refreshControl)
 
         // Warm up cache
-        Movie.all()
+        Movie.all(onError: {
+            TSMessage.showNotificationWithTitle("Network Error", type: TSMessageNotificationType.Error)
+        })
     }
 
     override func didReceiveMemoryWarning() {
