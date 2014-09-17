@@ -10,5 +10,7 @@
 #define Fresh_Produce_Cocoapods_Bridge_h
 
 #import <TSMessages/TSMessage.h>
+#import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/UIImageView+AFNetworking.h>
 
 #endif

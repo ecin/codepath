@@ -74,21 +74,25 @@ class Movie {
         return self.data["posters"]! as NSDictionary
     }
     
-    func poster(size: ImageSize = ImageSize.Thumbnail) -> UIImage {
-        var uri = posters()["original"]! as String
+    func posterURL(size: ImageSize = ImageSize.Thumbnail) -> String {
+        var url = posters()["original"]! as String
         
         switch size {
-            case .Detailed:
-                uri = uri.stringByReplacingOccurrencesOfString("tmb", withString: "det")
-            case .Original:
-                uri = uri.stringByReplacingOccurrencesOfString("tmb", withString: "ori")
-            case .Profile:
-                uri = uri.stringByReplacingOccurrencesOfString("tmb", withString: "pro")
-            case .Thumbnail:
-                break
+        case .Detailed:
+            url = url.stringByReplacingOccurrencesOfString("tmb", withString: "det")
+        case .Original:
+            url = url.stringByReplacingOccurrencesOfString("tmb", withString: "ori")
+        case .Profile:
+            url = url.stringByReplacingOccurrencesOfString("tmb", withString: "pro")
+        case .Thumbnail:
+            break
         }
         
-        var url = NSURL(string: uri)
+        return url
+    }
+    
+    func poster(size: ImageSize = ImageSize.Thumbnail) -> UIImage {
+        var url = NSURL(string: posterURL(size: size))
         var data = NSData(contentsOfURL: url)
         return UIImage(data: data)
     }

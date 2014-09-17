@@ -40,7 +40,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = movieTableView.dequeueReusableCellWithIdentifier("com.copypastel.freshproduce.moviecell") as MovieTableViewCell
         let movie = Movie.get(indexPath.row)
         cell.titleLabel?.text = movie.title()
-        cell.posterImageView?.image = movie.poster(size: Movie.ImageSize.Profile)
+        var posterURL = NSURL(string: movie.posterURL(size: Movie.ImageSize.Profile))
+        cell.posterImageView?.setImageWithURL(posterURL)
         cell.yearLabel?.text = movie.year()
         cell.ratingLabel?.text = String(movie.rating())
         cell.synopsisLabel?.text = movie.synopsis()
