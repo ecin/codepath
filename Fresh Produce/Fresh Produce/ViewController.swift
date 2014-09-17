@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
         self.movieTableView.addSubview(refreshControl)
+        self.movieTableView.sendSubviewToBack(refreshControl)
 
         // Warm up cache
         Movie.all(onError: {
