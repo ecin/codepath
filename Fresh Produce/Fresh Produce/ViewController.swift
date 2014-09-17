@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = movieTableView.dequeueReusableCellWithIdentifier("com.copypastel.freshproduce.moviecell") as MovieTableViewCell
         let movie = Movie.get(indexPath.row)
-        cell.fromMovie(movie)
+        cell.fromMovie(movie!)
         return cell
     }
     
@@ -52,8 +52,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func refresh(sender: AnyObject) {
-        Movie.refresh()
+        Movie.refresh(onError: {
+            TSMessage.showNotificationWithTitle("Network Error", type: TSMessageNotificationType.Error)
+        })
         refreshControl.endRefreshing()
+        movieTableView.reloadData()
     }
 }
 

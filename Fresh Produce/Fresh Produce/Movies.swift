@@ -9,21 +9,22 @@
 import Foundation
 import UIKit
 
-private var Cache: [Movie] = []
+private var Cache: [Movie?] = []
 private let Key = "t2quq5swmxtkux9ebfurexje"
 private let Endpoint = "http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json"
 
 class Movie {
-    class func all(onError: (()->Void) = {}) -> [Movie] {
+    class func all(onError: (()->Void) = {}) -> [Movie?] {
+        var c = Cache
         if Cache.isEmpty {
             let request = NSMutableURLRequest(URL: NSURL.URLWithString("\(Endpoint)?apikey=\(Key)"))
             var response: NSURLResponse?
             var error: NSError?
             
-            var data: NSData = NSURLConnection.sendSynchronousRequest(request, returningResponse: &response, error: &error)!
+            var data: NSData? = NSURLConnection.sendSynchronousRequest(request, returningResponse: &response, error: &error)
             
             if (error == nil) {
-                let dictionary = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: &error) as NSDictionary
+                let dictionary = NSJSONSerialization.JSONObjectWithData(data!, options: nil, error: &error) as NSDictionary
                 let movies = dictionary["movies"] as Array<NSDictionary>
                 for (data) in movies {
                     Cache.append(Movie(data: data))
@@ -36,16 +37,17 @@ class Movie {
         return Cache
     }
     
-    class func refresh() -> [Movie] {
-        Cache.removeAll(keepCapacity: true)
-        return all()
+    class func refresh(onError: (()->Void) = {}) -> [Movie?] {
+        Cache.removeAll(keepCapacity: false)
+        return all(onError: onError)
     }
     
     class func count() -> Int {
         return Cache.count
     }
     
-    class func get(index: Int) -> Movie {
+    class func get(index: Int) -> Movie? {
+        var c = Cache
         return Cache[index]
     }
     
