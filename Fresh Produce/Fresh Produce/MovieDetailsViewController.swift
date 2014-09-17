@@ -12,11 +12,16 @@ class MovieDetailsViewController: UIViewController {
 
     var movie: Movie?
     @IBOutlet weak var posterImageView: UIImageView!
-    @IBOutlet weak var detailsTextView: UITextView!
+    @IBOutlet weak var detailsTextView: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         detailsTextView.text = movie!.synopsis()
+        CGSizeMake(detailsTextView.frame.size.width, CGFloat.max)
+        var textSize = detailsTextView.sizeThatFits(CGSizeMake(detailsTextView.frame.size.width, CGFloat.max))
+        scrollView.contentSize = textSize
+        scrollView.sizeToFit()
         posterImageView.image = movie!.poster(size: Movie.ImageSize.Original)
         // Do any additional setup after loading the view.
     }
