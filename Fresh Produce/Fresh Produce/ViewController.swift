@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var movieTableView: UITableView!
+    
     var refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
@@ -38,6 +39,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let movie = Movie.get(indexPath.row)
         cell.titleLabel?.text = movie.title()
         cell.posterImageView?.image = movie.poster(size: Movie.ImageSize.Profile)
+        cell.yearLabel?.text = movie.year()
+        cell.ratingLabel?.text = String(movie.rating())
+        cell.synopsisLabel?.text = movie.synopsis()
         return cell
     }
     

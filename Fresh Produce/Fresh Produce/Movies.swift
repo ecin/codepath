@@ -55,6 +55,14 @@ class Movie {
     
     func title() -> String { return self.data["title"]! as NSString }
     func synopsis() -> String { return self.data["synopsis"]! as NSString }
+    func year() -> String {
+        var releaseDate = self.data["release_dates"]!["theater"]! as String
+        var year = Array(releaseDate)[0...3]
+        return String(seq: year)
+    }
+    func rating() -> Int {
+        return self.data["ratings"]!["audience_score"]! as Int
+    }
     
     enum ImageSize {
         case Detailed, Original, Profile, Thumbnail
