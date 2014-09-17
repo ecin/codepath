@@ -27,5 +27,14 @@ class MovieTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func fromMovie(movie: Movie) {
+        self.titleLabel?.text = movie.title()
+        var posterURL = NSURL(string: movie.posterURL(size: Movie.ImageSize.Profile))
+        self.posterImageView?.setImageWithURL(posterURL)
+        self.yearLabel?.text = movie.year()
+        self.ratingLabel?.text = String(movie.rating())
+        self.synopsisLabel?.text = movie.synopsis()
+    }
 
 }
