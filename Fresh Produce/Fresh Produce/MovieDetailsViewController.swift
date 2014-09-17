@@ -11,8 +11,8 @@ import UIKit
 class MovieDetailsViewController: UIViewController {
 
     var movie: Movie?
-    @IBOutlet weak var detailsTextView: UITextView!
     @IBOutlet weak var posterImageView: UIImageView!
+    @IBOutlet weak var detailsTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
