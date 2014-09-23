@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		109068CCBFF146B8A848DBB2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0B6A5844A649F7ADFD4F1C /* libPods.a */; };
+		A10B729719D1822F00A60F78 /* BusinessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10B729619D1822F00A60F78 /* BusinessTableViewCell.swift */; };
 		A134F90D19D1670E0052EE85 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = A134F90C19D1670E0052EE85 /* Business.swift */; };
 		A13B3B1419CD361400BB48D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13B3B1319CD361400BB48D3 /* AppDelegate.swift */; };
 		A13B3B1619CD361400BB48D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13B3B1519CD361400BB48D3 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		80E707169BE240B4ACFE520A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		8F0B6A5844A649F7ADFD4F1C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10B729619D1822F00A60F78 /* BusinessTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessTableViewCell.swift; sourceTree = "<group>"; };
 		A134F90C19D1670E0052EE85 /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		A134F90E19D16D410052EE85 /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		A13B3B0E19CD361400BB48D3 /* Hangry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangry.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +93,7 @@
 				A134F90C19D1670E0052EE85 /* Business.swift */,
 				A13B3B1519CD361400BB48D3 /* ViewController.swift */,
 				A13B3B1719CD361400BB48D3 /* Main.storyboard */,
+				A10B729619D1822F00A60F78 /* BusinessTableViewCell.swift */,
 				A13B3B1A19CD361400BB48D3 /* Images.xcassets */,
 				A13B3B1C19CD361400BB48D3 /* LaunchScreen.xib */,
 				A13B3B1119CD361400BB48D3 /* Supporting Files */,
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A134F90D19D1670E0052EE85 /* Business.swift in Sources */,
+				A10B729719D1822F00A60F78 /* BusinessTableViewCell.swift in Sources */,
 				A13B3B1619CD361400BB48D3 /* ViewController.swift in Sources */,
 				A13B3B1419CD361400BB48D3 /* AppDelegate.swift in Sources */,
 			);

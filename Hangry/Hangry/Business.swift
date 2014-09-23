@@ -9,13 +9,14 @@
 import Foundation
 import UIKit
 
-private var Cache: [Business] = []
+private var Cache: [Business?] = []
 private var SingletonClient = Business.Client(consumerKey: "-UGIOXFd46cE0zWHcZj8sw", consumerSecret: "DfQFnowVsGRTz4geC3jGEhQFLy4", accessToken: "VVj_Z5Bu5Prz0w8GzJQ2-4_oLexyGdLQ", accessSecret: "-vS6Y6rb2lhDoHry4h7wvgbAKqg")
 
 class Business {
     
     var phone: String?
     var id: String?
+    var imageURL: NSURL?
     var image: UIImage?
     var categories: [String] = []
     var url: String?
@@ -85,13 +86,11 @@ class Business {
             return dictionary
         }
         
-        func execute(success: ([Business]) -> (), failure: (NSError) -> ()) {
+        func execute(success: ([Business?]) -> (), failure: (NSError) -> ()) {
             if Cache.isEmpty {
-                print(self.parameters())
                 SingletonClient.searchWithTerm(term,
                     parameters: self.parameters(),
                     success: { (request: AFHTTPRequestOperation!, response: AnyObject!) in
-                        success(Cache)
                         var businesses = (response as NSDictionary)["businesses"] as Array<NSDictionary>
                         
                         for details in businesses {
@@ -105,11 +104,7 @@ class Business {
                             
                             var categoryPairs = details["categories"] as Array<Array<String>>
                             business.categories = categoryPairs.map { pair in pair[0] }
-                            var imageUrl = details["image_url"] as? String
-                            if (imageUrl != nil) {
-                                var url = NSURL(string: imageUrl!)
-                                business.image = UIImage(data: NSData(contentsOfURL: url))
-                            }
+                            business.imageURL = NSURL(string: details["image_url"] as String)
                             
                             Cache.append(business)
                         }
@@ -125,8 +120,16 @@ class Business {
         }
     }
 
-    class func get(index: Int) -> Business {
-        return Business()
+    class func count() -> Int {
+        return Cache.count
+    }
+    
+    class func get(index: Int) -> Business? {
+        if (Cache.count < index) {
+            return nil
+        } else {
+            return Cache[index]
+        }
     }
 
 }

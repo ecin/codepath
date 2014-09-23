@@ -8,11 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var businessesTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        var search = Business.Search()
+        search.term = "sushi"
+        search.execute({ (businesses) in self.businessesTableView.reloadData() }, failure: { (error) in print(error) })
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +25,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        println(Business.count())
+        return Business.count()
+    }
 
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = businessesTableView.dequeueReusableCellWithIdentifier("businessTableViewCell") as BusinessTableViewCell
+        let business = Business.get(indexPath.row)
+        
+        if (business != nil) {
+            cell.fromBusiness(business!)
+        }
+        
+        return cell
+    }
 }
 
