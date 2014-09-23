@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1nN-Pc-7Nb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="156" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EF3-bC-2jf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="156" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EF3-bC-2jf">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -50,10 +51,21 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EF3-bC-2jf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="GIR-4P-O0a"/>
+                            <constraint firstItem="EF3-bC-2jf" firstAttribute="bottom" secondItem="kh9-bI-dsS" secondAttribute="bottomMargin" id="S3k-H7-CfX"/>
+                            <constraint firstItem="EF3-bC-2jf" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="mPN-WV-RJ4"/>
+                            <constraint firstAttribute="bottom" secondItem="EF3-bC-2jf" secondAttribute="bottom" id="wsD-wM-1wJ"/>
+                            <constraint firstAttribute="trailing" secondItem="EF3-bC-2jf" secondAttribute="trailing" id="x0q-89-ggc"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="fJX-mK-5XM">
-                        <barButtonItem key="leftBarButtonItem" title="Filter" id="LcX-qU-eEe"/>
+                        <barButtonItem key="leftBarButtonItem" title="Filter" id="LcX-qU-eEe">
+                            <connections>
+                                <segue destination="VGH-qI-qIp" kind="show" id="MIc-XO-Rug"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -82,6 +94,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5aY-1a-2l1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="283" y="137"/>
+        </scene>
+        <!--Filters-->
+        <scene sceneID="a4Z-cw-l4c">
+            <objects>
+                <viewController id="VGH-qI-qIp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ofT-Ik-IxJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wy7-Lb-A5y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KHn-xN-uz2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zAt-Vf-R4M">
+                                <rect key="frame" x="428" y="186" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open now?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QP6-A0-Evj">
+                                <rect key="frame" x="69" y="186" width="260" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QP6-A0-Evj" firstAttribute="leading" secondItem="KHn-xN-uz2" secondAttribute="leading" constant="69" id="5TG-p7-yDY"/>
+                            <constraint firstItem="zAt-Vf-R4M" firstAttribute="top" secondItem="ofT-Ik-IxJ" secondAttribute="bottom" constant="122" id="8p8-05-ViE"/>
+                            <constraint firstItem="QP6-A0-Evj" firstAttribute="top" secondItem="ofT-Ik-IxJ" secondAttribute="bottom" constant="122" id="SpT-8m-Aoq"/>
+                            <constraint firstItem="zAt-Vf-R4M" firstAttribute="leading" secondItem="QP6-A0-Evj" secondAttribute="trailing" constant="99" id="cVt-cK-DGx"/>
+                            <constraint firstAttribute="trailing" secondItem="zAt-Vf-R4M" secondAttribute="trailing" constant="123" id="huk-bH-qQ7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Filters" id="nMd-fd-4NI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oN8-Q6-S5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1607" y="137"/>
         </scene>
     </scenes>
 </document>
