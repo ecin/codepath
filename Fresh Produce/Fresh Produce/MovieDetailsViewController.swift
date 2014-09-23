@@ -2,7 +2,7 @@
 //  MovieDetailsViewController.swift
 //  Fresh Produce
 //
-//  Created by Nelson Crespo on 9/14/14.
+//  Created by Nelson Crespo on 9/15/14.
 //  Copyright (c) 2014 Copypastel. All rights reserved.
 //
 
@@ -10,14 +10,19 @@ import UIKit
 
 class MovieDetailsViewController: UIViewController {
 
-    override func loadView() {
-        self.view = UIView(frame: CGRectZero)
-        self.view.backgroundColor = UIColor.redColor()
-    }
+    var movie: Movie?
+    @IBOutlet weak var posterImageView: UIImageView!
+    @IBOutlet weak var detailsTextView: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        detailsTextView.text = movie!.synopsis()
+        CGSizeMake(detailsTextView.frame.size.width, CGFloat.max)
+        var textSize = detailsTextView.sizeThatFits(CGSizeMake(detailsTextView.frame.size.width, CGFloat.max))
+        scrollView.contentSize = textSize
+        scrollView.sizeToFit()
+        posterImageView.image = movie!.poster(size: Movie.ImageSize.Original)
         // Do any additional setup after loading the view.
     }
 
