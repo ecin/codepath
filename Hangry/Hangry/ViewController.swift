@@ -8,12 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
+    @IBOutlet weak var navigationBar: UINavigationItem!
     @IBOutlet weak var businessesTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var searchBar = UISearchBar()
+        searchBar.delegate = self
+        
+        navigationBar.titleView = searchBar
         
         var search = Business.Search()
         search.term = "sushi"
@@ -39,6 +45,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         
         return cell
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+        var search = Business.Search()
+        search.term = searchBar.text!
+
+        search.execute({ (businesses) in
+            self.businessesTableView.reloadData()
+            }, failure: { (error) in print(error) })
+        
     }
 }
 

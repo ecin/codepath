@@ -51,11 +51,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="fJX-mK-5XM">
                         <barButtonItem key="leftBarButtonItem" title="Filter" id="LcX-qU-eEe"/>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="businessesTableView" destination="EF3-bC-2jf" id="fPF-dT-Yot"/>
+                        <outlet property="navigationBar" destination="fJX-mK-5XM" id="TUX-n5-bxb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

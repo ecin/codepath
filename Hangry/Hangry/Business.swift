@@ -87,36 +87,34 @@ class Business {
         }
         
         func execute(success: ([Business?]) -> (), failure: (NSError) -> ()) {
-            if Cache.isEmpty {
-                SingletonClient.searchWithTerm(term,
-                    parameters: self.parameters(),
-                    success: { (request: AFHTTPRequestOperation!, response: AnyObject!) in
-                        var businesses = (response as NSDictionary)["businesses"] as Array<NSDictionary>
+            SingletonClient.searchWithTerm(term,
+                parameters: self.parameters(),
+                success: { (request: AFHTTPRequestOperation!, response: AnyObject!) in
+                    var businesses = (response as NSDictionary)["businesses"] as Array<NSDictionary>
+                    
+                    // Clear cache before adding more items
+                    Cache.removeAll(keepCapacity: true)
+                    for details in businesses {
+                        var business = Business()
+                        business.id = details["id"] as? String
+                        business.name = details["name"] as? String
+                        business.phone = details["display_phone"] as? String
+                        business.url = details["url"] as? String
+                        business.rating = details["rating"] as? Int
+                        business.reviewCount = details["review_count"] as? Int
                         
-                        for details in businesses {
-                            var business = Business()
-                            business.id = details["id"] as? String
-                            business.name = details["name"] as? String
-                            business.phone = details["display_phone"] as? String
-                            business.url = details["url"] as? String
-                            business.rating = details["rating"] as? Int
-                            business.reviewCount = details["review_count"] as? Int
-                            
-                            var categoryPairs = details["categories"] as Array<Array<String>>
-                            business.categories = categoryPairs.map { pair in pair[0] }
-                            business.imageURL = NSURL(string: details["image_url"] as String)
-                            
-                            Cache.append(business)
-                        }
+                        var categoryPairs = details["categories"] as Array<Array<String>>
+                        business.categories = categoryPairs.map { pair in pair[0] }
+                        business.imageURL = NSURL(string: details["image_url"] as String)
                         
-                        success(Cache)
-                    },
-                    failure: { (operation: AFHTTPRequestOperation!, error: NSError!) in
-                        failure(error)
-                    })
-            } else {
-                success(Cache)
-            }
+                        Cache.append(business)
+                    }
+                    
+                    success(Cache)
+                },
+                failure: { (operation: AFHTTPRequestOperation!, error: NSError!) in
+                    failure(error)
+            })
         }
     }
 
