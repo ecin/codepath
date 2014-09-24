@@ -104,15 +104,30 @@ class FiltersViewController: UIViewController {
     
     func toggleCategories() {
         // Putting all these switches in their own view would make this a lot easier
-        foodCategorySwitch.hidden = !showCategoriesSwitch.on
-        healthCategorySwitch.hidden = !showCategoriesSwitch.on
-        petCategorySwitch.hidden = !showCategoriesSwitch.on
-        foodCategoryLabel.hidden = !showCategoriesSwitch.on
-        healthCategoryLabel.hidden = !showCategoriesSwitch.on
-        petCategoryLabel.hidden = !showCategoriesSwitch.on
+        var elements = [foodCategorySwitch, foodCategoryLabel, healthCategorySwitch, healthCategoryLabel, petCategorySwitch, petCategoryLabel]
         
         foodCategorySwitch.on = contains(search.categories, "food")
         healthCategorySwitch.on = contains(search.categories, "health")
         petCategorySwitch.on = contains(search.categories, "pets")
+        
+        if showCategoriesSwitch.on {
+            for element in elements {
+                element.hidden = false
+                UIView.animateWithDuration(0.3, animations: {
+                    element.alpha = 1
+                    }, completion: { (finished: Bool) in
+                })
+            }
+        } else {
+            for element in elements {
+                UIView.animateWithDuration(0.3, animations: {
+                    element.alpha = 0
+                    }, completion: { (finished: Bool) in
+                        element.hidden = finished
+                })
+            }
+        }
+        
+
     }
 }
