@@ -23,7 +23,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         searchBar.delegate = self
         
         navigationBar.titleView = searchBar
-        search.execute({ (businesses) in self.businessesTableView.reloadData() }, failure: { (error) in print(error) })
+        redoSearch()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +32,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        println(Business.count())
         return Business.count()
     }
 
@@ -53,11 +52,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func searchBarTextDidEndEditing(searchBar: UISearchBar) {
         search.term = searchBar.text!
-
+        redoSearch()
+    }
+    
+    override func didMoveToParentViewController(parent: UIViewController?) {
+        redoSearch()
+    }
+    
+    func redoSearch() {
+        println("Searching...")
+        Business.clear()
+        self.businessesTableView.reloadData()
         search.execute({ (businesses) in
             self.businessesTableView.reloadData()
             }, failure: { (error) in print(error) })
-        
     }
 }
 

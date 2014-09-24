@@ -81,17 +81,17 @@ class Business {
             dictionary["limit"] = String(self.limit)
             dictionary["offset"] = String(self.offset)
             dictionary["radius"] = String(self.radius)
-//            dictionary["has_deals"] = String(self.hasDeals)
+            dictionary["has_deals"] = self.hasDeals ? "0" : "1"
             dictionary["location"] = self.location
             
-//            switch self.sortBy {
-//            case .Matched:
-//                dictionary["sort"] = "matched"
-//            case .Distance:
-//                dictionary["sort"] = "distance"
-//            default:
-//                dictionary["sort"] = "rating"
-//            }
+           switch self.sortBy {
+           case .Matched:
+               dictionary["sort"] = "0"
+           case .Distance:
+               dictionary["sort"] = "1"
+           default:
+               dictionary["sort"] = "2"
+           }
             
             return dictionary
         }
@@ -130,6 +130,10 @@ class Business {
 
     class func count() -> Int {
         return Cache.count
+    }
+    
+    class func clear() {
+        Cache.removeAll(keepCapacity: true)
     }
     
     class func get(index: Int) -> Business? {

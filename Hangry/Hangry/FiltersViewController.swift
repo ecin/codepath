@@ -19,10 +19,21 @@ class FiltersViewController: UIViewController {
         super.viewDidLoad()
         
         hasDealsSwitch.on = search.hasDeals
-        sortBySegmentedControl.selectedSegmentIndex = 1
+        
+        // Must be a more elegant way of doing this
+        switch search.sortBy {
+        case Business.Search.Sort.Matched:
+            sortBySegmentedControl.selectedSegmentIndex = 0
+        case Business.Search.Sort.Distance:
+            sortBySegmentedControl.selectedSegmentIndex = 1
+        case Business.Search.Sort.Rating:
+            sortBySegmentedControl.selectedSegmentIndex = 2
+        default:
+            sortBySegmentedControl.selectedSegmentIndex = 0
+        }
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -44,17 +55,5 @@ class FiltersViewController: UIViewController {
     
     @IBAction func hasDealsChanged(hasDeals: UISwitch) {
         search.hasDeals = hasDeals.on
-        println(search)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

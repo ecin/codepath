@@ -108,7 +108,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Has Deals?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QP6-A0-Evj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Has Deals?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QP6-A0-Evj">
                                 <rect key="frame" x="69" y="186" width="260" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -138,7 +138,6 @@
                             <constraint firstItem="QP6-A0-Evj" firstAttribute="leading" secondItem="KHn-xN-uz2" secondAttribute="leading" constant="69" id="5TG-p7-yDY"/>
                             <constraint firstItem="zAt-Vf-R4M" firstAttribute="top" secondItem="ofT-Ik-IxJ" secondAttribute="bottom" constant="122" id="8p8-05-ViE"/>
                             <constraint firstItem="QP6-A0-Evj" firstAttribute="top" secondItem="ofT-Ik-IxJ" secondAttribute="bottom" constant="122" id="SpT-8m-Aoq"/>
-                            <constraint firstItem="zAt-Vf-R4M" firstAttribute="leading" secondItem="QP6-A0-Evj" secondAttribute="trailing" constant="99" id="cVt-cK-DGx"/>
                             <constraint firstAttribute="centerX" secondItem="XsH-ZW-a0w" secondAttribute="centerX" id="dnA-Xg-KSC"/>
                             <constraint firstAttribute="trailing" secondItem="zAt-Vf-R4M" secondAttribute="trailing" constant="123" id="huk-bH-qQ7"/>
                         </constraints>
