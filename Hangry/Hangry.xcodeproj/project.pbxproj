@@ -16,6 +16,7 @@
 		A13B3B1B19CD361400BB48D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13B3B1A19CD361400BB48D3 /* Images.xcassets */; };
 		A13B3B1E19CD361400BB48D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A13B3B1C19CD361400BB48D3 /* LaunchScreen.xib */; };
 		A13B3B2A19CD361400BB48D3 /* HangryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13B3B2919CD361400BB48D3 /* HangryTests.swift */; };
+		A15054CA19D23D8C00A542B9 /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15054C919D23D8C00A542B9 /* FiltersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		A13B3B2319CD361400BB48D3 /* HangryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HangryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13B3B2819CD361400BB48D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A13B3B2919CD361400BB48D3 /* HangryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangryTests.swift; sourceTree = "<group>"; };
+		A15054C919D23D8C00A542B9 /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				A13B3B1319CD361400BB48D3 /* AppDelegate.swift */,
 				A134F90C19D1670E0052EE85 /* Business.swift */,
+				A15054C919D23D8C00A542B9 /* FiltersViewController.swift */,
 				A13B3B1519CD361400BB48D3 /* ViewController.swift */,
 				A13B3B1719CD361400BB48D3 /* Main.storyboard */,
 				A10B729619D1822F00A60F78 /* BusinessTableViewCell.swift */,
@@ -273,6 +276,7 @@
 				A10B729719D1822F00A60F78 /* BusinessTableViewCell.swift in Sources */,
 				A13B3B1619CD361400BB48D3 /* ViewController.swift in Sources */,
 				A13B3B1419CD361400BB48D3 /* AppDelegate.swift in Sources */,
+				A15054CA19D23D8C00A542B9 /* FiltersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

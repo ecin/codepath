@@ -70,6 +70,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="businessesTableView" destination="EF3-bC-2jf" id="fPF-dT-Yot"/>
+                        <outlet property="filterButton" destination="LcX-qU-eEe" id="n4D-Zv-NMu"/>
                         <outlet property="navigationBar" destination="fJX-mK-5XM" id="TUX-n5-bxb"/>
                     </connections>
                 </viewController>
@@ -98,7 +99,7 @@
         <!--Filters-->
         <scene sceneID="a4Z-cw-l4c">
             <objects>
-                <viewController id="VGH-qI-qIp" sceneMemberID="viewController">
+                <viewController id="VGH-qI-qIp" customClass="FiltersViewController" customModule="Hangry" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ofT-Ik-IxJ"/>
                         <viewControllerLayoutGuide type="bottom" id="Wy7-Lb-A5y"/>
@@ -107,26 +108,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zAt-Vf-R4M">
-                                <rect key="frame" x="428" y="186" width="51" height="31"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open now?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QP6-A0-Evj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Has Deals?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QP6-A0-Evj">
                                 <rect key="frame" x="69" y="186" width="260" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zAt-Vf-R4M">
+                                <rect key="frame" x="428" y="186" width="51" height="31"/>
+                                <connections>
+                                    <action selector="hasDealsChanged:" destination="VGH-qI-qIp" eventType="valueChanged" id="Gig-6I-tdL"/>
+                                </connections>
+                            </switch>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XsH-ZW-a0w">
+                                <rect key="frame" x="198" y="100" width="203" height="29"/>
+                                <segments>
+                                    <segment title="Matched"/>
+                                    <segment title="Distance"/>
+                                    <segment title="Rating"/>
+                                </segments>
+                                <connections>
+                                    <action selector="sortByChanged:" destination="VGH-qI-qIp" eventType="valueChanged" id="2xD-oz-ye4"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="XsH-ZW-a0w" firstAttribute="top" secondItem="KHn-xN-uz2" secondAttribute="top" constant="100" id="50w-Fy-azR"/>
                             <constraint firstItem="QP6-A0-Evj" firstAttribute="leading" secondItem="KHn-xN-uz2" secondAttribute="leading" constant="69" id="5TG-p7-yDY"/>
                             <constraint firstItem="zAt-Vf-R4M" firstAttribute="top" secondItem="ofT-Ik-IxJ" secondAttribute="bottom" constant="122" id="8p8-05-ViE"/>
                             <constraint firstItem="QP6-A0-Evj" firstAttribute="top" secondItem="ofT-Ik-IxJ" secondAttribute="bottom" constant="122" id="SpT-8m-Aoq"/>
                             <constraint firstItem="zAt-Vf-R4M" firstAttribute="leading" secondItem="QP6-A0-Evj" secondAttribute="trailing" constant="99" id="cVt-cK-DGx"/>
+                            <constraint firstAttribute="centerX" secondItem="XsH-ZW-a0w" secondAttribute="centerX" id="dnA-Xg-KSC"/>
                             <constraint firstAttribute="trailing" secondItem="zAt-Vf-R4M" secondAttribute="trailing" constant="123" id="huk-bH-qQ7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Filters" id="nMd-fd-4NI"/>
+                    <connections>
+                        <outlet property="hasDealsSwitch" destination="zAt-Vf-R4M" id="sAF-T5-hJd"/>
+                        <outlet property="sortBySegmentedControl" destination="XsH-ZW-a0w" id="b1L-60-UmN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oN8-Q6-S5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

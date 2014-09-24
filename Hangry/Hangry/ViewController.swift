@@ -10,8 +10,11 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
+    @IBOutlet weak var filterButton: UIBarButtonItem!
     @IBOutlet weak var navigationBar: UINavigationItem!
     @IBOutlet weak var businessesTableView: UITableView!
+    
+    var search = Business.Search.getDefaultSearch()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +23,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         searchBar.delegate = self
         
         navigationBar.titleView = searchBar
-        
-        var search = Business.Search()
-        search.term = "sushi"
         search.execute({ (businesses) in self.businessesTableView.reloadData() }, failure: { (error) in print(error) })
     }
 
@@ -52,7 +52,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func searchBarTextDidEndEditing(searchBar: UISearchBar) {
-        var search = Business.Search()
         search.term = searchBar.text!
 
         search.execute({ (businesses) in

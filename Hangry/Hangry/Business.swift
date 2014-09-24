@@ -11,6 +11,7 @@ import UIKit
 
 private var Cache: [Business?] = []
 private var SingletonClient = Business.Client(consumerKey: "-UGIOXFd46cE0zWHcZj8sw", consumerSecret: "DfQFnowVsGRTz4geC3jGEhQFLy4", accessToken: "VVj_Z5Bu5Prz0w8GzJQ2-4_oLexyGdLQ", accessSecret: "-vS6Y6rb2lhDoHry4h7wvgbAKqg")
+private var DefaultSearch: Business.Search = Business.Search()
 
 class Business {
     
@@ -51,6 +52,15 @@ class Business {
     }
     
     class Search {
+        // class variables aren't yet available in Swift
+        class func setDefaultSearch(search: Search) {
+            DefaultSearch = search
+        }
+        
+        class func getDefaultSearch() -> Search {
+            return DefaultSearch
+        }
+        
         enum Sort {
             case Matched, Distance, Rating
         }
