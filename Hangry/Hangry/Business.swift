@@ -22,8 +22,9 @@ class Business {
     var categories: [String] = []
     var url: String?
     var name: String?
+    var description: String?
     var rating: Int?
-    var ratingImage: UIImage?
+    var ratingImageURL: NSURL?
     var reviewCount: Int?
     
     private class Client: BDBOAuth1RequestOperationManager {
@@ -108,6 +109,7 @@ class Business {
                         var business = Business()
                         business.id = details["id"] as? String
                         business.name = details["name"] as? String
+                        business.description = details["snippet_text"] as? String
                         business.phone = details["display_phone"] as? String
                         business.url = details["url"] as? String
                         business.rating = details["rating"] as? Int
@@ -116,6 +118,7 @@ class Business {
                         var categoryPairs = details["categories"] as Array<Array<String>>
                         business.categories = categoryPairs.map { pair in pair[0] }
                         business.imageURL = NSURL(string: details["image_url"] as String)
+                        business.ratingImageURL = NSURL(string: details["rating_img_url_large"] as String)
                         
                         Cache.append(business)
                     }

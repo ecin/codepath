@@ -12,6 +12,9 @@ class BusinessTableViewCell: UITableViewCell {
 
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var ratingsImage: UIImageView!
+    @IBOutlet weak var reviewCount: UILabel!
+    @IBOutlet weak var descriptionTextView: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,6 +30,9 @@ class BusinessTableViewCell: UITableViewCell {
     func fromBusiness(business: Business) {
         nameLabel.text = business.name
         profileImageView?.setImageWithURL(business.imageURL)
+        descriptionTextView.text = business.description
+        reviewCount.text = "\(business.reviewCount!) reviews"
+        ratingsImage?.setImageWithURL(business.ratingImageURL)
     }
 
 }

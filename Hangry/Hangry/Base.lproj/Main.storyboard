@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1nN-Pc-7Nb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -27,20 +28,70 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WnQ-WN-R1A" id="SiC-ms-Dpi">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dc7-8a-prZ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="155" height="155.5"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dc7-8a-prZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="155" height="156"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="155" id="JQo-K0-bqd"/>
+                                                        <constraint firstAttribute="width" secondItem="dc7-8a-prZ" secondAttribute="height" multiplier="1:1" id="M5P-im-yl8"/>
+                                                        <constraint firstAttribute="width" constant="100" id="Yqj-em-EI2"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="M5P-im-yl8"/>
+                                                            <exclude reference="Yqj-em-EI2"/>
+                                                        </mask>
+                                                    </variation>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bl-5F-hjx">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bl-5F-hjx">
                                                     <rect key="frame" x="163" y="8" width="429" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y2B-jp-ksK">
+                                                    <rect key="frame" x="163" y="37" width="300" height="25"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" none="YES" image="YES" notEnabled="YES"/>
+                                                    </accessibility>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FhQ-i2-C3k">
+                                                    <rect key="frame" x="163" y="70" width="429" height="78"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Reviews" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpM-Ym-GsD">
+                                                    <rect key="frame" x="471" y="41" width="121" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xpM-Ym-GsD" firstAttribute="leading" secondItem="Y2B-jp-ksK" secondAttribute="trailing" constant="8" symbolic="YES" id="2St-aq-1mX"/>
+                                                <constraint firstItem="Y2B-jp-ksK" firstAttribute="leading" secondItem="dc7-8a-prZ" secondAttribute="trailing" constant="8" symbolic="YES" id="3wS-Nm-gq2"/>
+                                                <constraint firstItem="dc7-8a-prZ" firstAttribute="top" secondItem="SiC-ms-Dpi" secondAttribute="top" id="Gsz-Cw-hj2"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="FhQ-i2-C3k" secondAttribute="bottom" constant="-0.5" id="Njs-QY-MVE"/>
+                                                <constraint firstItem="FhQ-i2-C3k" firstAttribute="top" secondItem="Y2B-jp-ksK" secondAttribute="bottom" constant="8" symbolic="YES" id="QZL-en-sch"/>
+                                                <constraint firstItem="Y2B-jp-ksK" firstAttribute="bottom" secondItem="xpM-Ym-GsD" secondAttribute="bottom" id="SkL-b9-9P1"/>
+                                                <constraint firstItem="FhQ-i2-C3k" firstAttribute="leading" secondItem="dc7-8a-prZ" secondAttribute="trailing" constant="8" symbolic="YES" id="VAY-nx-Ant"/>
+                                                <constraint firstItem="dc7-8a-prZ" firstAttribute="leading" secondItem="SiC-ms-Dpi" secondAttribute="leading" id="Vym-N3-HUR"/>
+                                                <constraint firstItem="FhQ-i2-C3k" firstAttribute="trailing" secondItem="xpM-Ym-GsD" secondAttribute="trailing" id="Y9v-lf-J4r"/>
+                                                <constraint firstItem="Y2B-jp-ksK" firstAttribute="top" secondItem="8bl-5F-hjx" secondAttribute="bottom" constant="8" symbolic="YES" id="dD5-AT-NGg"/>
+                                                <constraint firstItem="Y2B-jp-ksK" firstAttribute="top" secondItem="SiC-ms-Dpi" secondAttribute="top" constant="37" id="dG6-3b-JJo"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="dc7-8a-prZ" secondAttribute="bottom" constant="-8.5" id="j4f-eo-jfA"/>
+                                                <constraint firstItem="FhQ-i2-C3k" firstAttribute="trailing" secondItem="SiC-ms-Dpi" secondAttribute="trailingMargin" id="pSz-4A-JcR"/>
+                                                <constraint firstItem="8bl-5F-hjx" firstAttribute="leading" secondItem="dc7-8a-prZ" secondAttribute="trailing" constant="8" symbolic="YES" id="ts0-jp-x2i"/>
+                                                <constraint firstItem="FhQ-i2-C3k" firstAttribute="trailing" secondItem="8bl-5F-hjx" secondAttribute="trailing" id="yV6-WH-39I"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="descriptionTextView" destination="FhQ-i2-C3k" id="Idi-j3-3by"/>
                                             <outlet property="nameLabel" destination="8bl-5F-hjx" id="hNN-Kk-qF6"/>
                                             <outlet property="profileImageView" destination="dc7-8a-prZ" id="H7F-89-9tf"/>
+                                            <outlet property="ratingsImage" destination="Y2B-jp-ksK" id="E82-Ak-SlK"/>
+                                            <outlet property="reviewCount" destination="xpM-Ym-GsD" id="eL8-LB-gdO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
