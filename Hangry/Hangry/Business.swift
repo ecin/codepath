@@ -78,7 +78,7 @@ class Business {
         private func parameters() -> [String:String] {
             var dictionary: [String:String] = [:]
             dictionary["term"] = self.term
-//            dictionary["categories"] = ",".join(self.categories)
+            dictionary["category_filter"] = ",".join(self.categories)
             dictionary["limit"] = String(self.limit)
             dictionary["offset"] = String(self.offset)
             dictionary["radius"] = String(self.radius)
@@ -110,7 +110,6 @@ class Business {
                         business.id = details["id"] as? String
                         business.name = details["name"] as? String
                         business.description = details["snippet_text"] as? String
-                        println(business.description!)
                         business.phone = details["display_phone"] as? String
                         business.url = details["url"] as? String
                         business.rating = details["rating"] as? Int
@@ -118,7 +117,7 @@ class Business {
                         
                         var categoryPairs = details["categories"] as Array<Array<String>>
                         business.categories = categoryPairs.map { pair in pair[0] }
-                        business.imageURL = NSURL(string: details["image_url"] as String)
+//                        business.imageURL = NSURL(string: details["image_url"] as String)
                         business.ratingImageURL = NSURL(string: details["rating_img_url"] as String)
                         
                         Cache.append(business)

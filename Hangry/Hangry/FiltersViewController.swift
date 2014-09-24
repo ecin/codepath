@@ -14,6 +14,13 @@ class FiltersViewController: UIViewController {
     
     @IBOutlet weak var sortBySegmentedControl: UISegmentedControl!
     @IBOutlet weak var hasDealsSwitch: UISwitch!
+    @IBOutlet weak var foodCategorySwitch: UISwitch!
+    @IBOutlet weak var healthCategorySwitch: UISwitch!
+    @IBOutlet weak var petCategorySwitch: UISwitch!
+    @IBOutlet weak var foodCategoryLabel: UILabel!
+    @IBOutlet weak var healthCategoryLabel: UILabel!
+    @IBOutlet weak var petCategoryLabel: UILabel!
+    @IBOutlet weak var showCategoriesSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +38,37 @@ class FiltersViewController: UIViewController {
         default:
             sortBySegmentedControl.selectedSegmentIndex = 0
         }
+        
+        showCategoriesSwitch.on = !search.categories.isEmpty
+        toggleCategories()
         // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func showCategoriesChanged(showCategories: UISwitch) {
+        if !showCategories.on {
+            search.categories = []
+        } else {
+            calculateCategories()
+        }
+        
+        toggleCategories()
+    }
+    
+    @IBAction func foodCategoryChanged(sender: UISwitch) {
+        calculateCategories()
+    }
+    
+    @IBAction func healthCategoryChanged(sender: AnyObject) {
+        calculateCategories()
+    }
+    
+    @IBAction func petsCategoryChanged(sender: UISwitch) {
+        calculateCategories()
     }
     
     @IBAction func sortByChanged(sortBy: UISegmentedControl) {
@@ -55,5 +87,32 @@ class FiltersViewController: UIViewController {
     
     @IBAction func hasDealsChanged(hasDeals: UISwitch) {
         search.hasDeals = hasDeals.on
+    }
+    
+    func calculateCategories() {
+        search.categories = []
+        if foodCategorySwitch.on {
+            search.categories.append("food")
+        }
+        if healthCategorySwitch.on {
+            search.categories.append("health")
+        }
+        if petCategorySwitch.on {
+            search.categories.append("pets")
+        }
+    }
+    
+    func toggleCategories() {
+        // Putting all these switches in their own view would make this a lot easier
+        foodCategorySwitch.hidden = !showCategoriesSwitch.on
+        healthCategorySwitch.hidden = !showCategoriesSwitch.on
+        petCategorySwitch.hidden = !showCategoriesSwitch.on
+        foodCategoryLabel.hidden = !showCategoriesSwitch.on
+        healthCategoryLabel.hidden = !showCategoriesSwitch.on
+        petCategoryLabel.hidden = !showCategoriesSwitch.on
+        
+        foodCategorySwitch.on = contains(search.categories, "food")
+        healthCategorySwitch.on = contains(search.categories, "health")
+        petCategorySwitch.on = contains(search.categories, "pets")
     }
 }

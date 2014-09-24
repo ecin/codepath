@@ -144,19 +144,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Has Deals?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QP6-A0-Evj">
-                                <rect key="frame" x="69" y="186" width="260" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Has Deals?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QP6-A0-Evj">
+                                <rect key="frame" x="114" y="186" width="87.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zAt-Vf-R4M">
-                                <rect key="frame" x="428" y="186" width="51" height="31"/>
+                                <rect key="frame" x="301" y="186" width="51" height="31"/>
                                 <connections>
                                     <action selector="hasDealsChanged:" destination="VGH-qI-qIp" eventType="valueChanged" id="Gig-6I-tdL"/>
                                 </connections>
                             </switch>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XsH-ZW-a0w">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XsH-ZW-a0w">
                                 <rect key="frame" x="198" y="100" width="203" height="29"/>
                                 <segments>
                                     <segment title="Matched"/>
@@ -167,20 +167,99 @@
                                     <action selector="sortByChanged:" destination="VGH-qI-qIp" eventType="valueChanged" id="2xD-oz-ye4"/>
                                 </connections>
                             </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i8D-ml-sBD">
+                                <rect key="frame" x="301" y="267" width="51" height="31"/>
+                                <connections>
+                                    <action selector="showCategoriesChanged:" destination="VGH-qI-qIp" eventType="valueChanged" id="XwK-St-7AO"/>
+                                </connections>
+                            </switch>
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qaK-8A-1of">
+                                <rect key="frame" x="301" y="334" width="51" height="31"/>
+                                <connections>
+                                    <action selector="foodCategoryChanged:" destination="VGH-qI-qIp" eventType="valueChanged" id="953-iK-s3m"/>
+                                </connections>
+                            </switch>
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="duL-ZO-iS7">
+                                <rect key="frame" x="301" y="373" width="51" height="31"/>
+                                <connections>
+                                    <action selector="healthCategoryChanged:" destination="VGH-qI-qIp" eventType="valueChanged" id="prX-Ha-shH"/>
+                                </connections>
+                            </switch>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dh-Tw-kJ5">
+                                <rect key="frame" x="114" y="378" width="117" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="biZ-Bl-vlg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pets" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgY-nv-38T">
+                                <rect key="frame" x="114" y="417" width="34.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLT-lr-fC1">
+                                <rect key="frame" x="114" y="272" width="171" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="YCe-2c-Ixj"/>
+                                    <constraint firstAttribute="width" constant="171" id="cHl-Fb-mDf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjf-RO-4wt">
+                                <rect key="frame" x="114" y="339" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Pel-hy-Zgh">
+                                <rect key="frame" x="301" y="412" width="51" height="31"/>
+                                <connections>
+                                    <action selector="petsCategoryChanged:" destination="VGH-qI-qIp" eventType="valueChanged" id="3ck-IG-Wim"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XsH-ZW-a0w" firstAttribute="top" secondItem="KHn-xN-uz2" secondAttribute="top" constant="100" id="50w-Fy-azR"/>
-                            <constraint firstItem="QP6-A0-Evj" firstAttribute="leading" secondItem="KHn-xN-uz2" secondAttribute="leading" constant="69" id="5TG-p7-yDY"/>
+                            <constraint firstItem="3Dh-Tw-kJ5" firstAttribute="leading" secondItem="KHn-xN-uz2" secondAttribute="leadingMargin" constant="98" id="00B-3t-QgV"/>
+                            <constraint firstItem="duL-ZO-iS7" firstAttribute="leading" secondItem="Pel-hy-Zgh" secondAttribute="leading" id="0JC-8o-iNF"/>
+                            <constraint firstItem="i8D-ml-sBD" firstAttribute="leading" secondItem="zAt-Vf-R4M" secondAttribute="leading" id="0UG-wu-jIh"/>
+                            <constraint firstItem="duL-ZO-iS7" firstAttribute="top" secondItem="qaK-8A-1of" secondAttribute="bottom" constant="8" symbolic="YES" id="5J0-d0-c12"/>
+                            <constraint firstItem="qaK-8A-1of" firstAttribute="centerY" secondItem="hjf-RO-4wt" secondAttribute="centerY" id="71z-1x-Clw"/>
                             <constraint firstItem="zAt-Vf-R4M" firstAttribute="top" secondItem="ofT-Ik-IxJ" secondAttribute="bottom" constant="122" id="8p8-05-ViE"/>
+                            <constraint firstItem="qaK-8A-1of" firstAttribute="top" secondItem="i8D-ml-sBD" secondAttribute="bottom" constant="36" id="EpC-62-et8"/>
+                            <constraint firstItem="3Dh-Tw-kJ5" firstAttribute="top" secondItem="hjf-RO-4wt" secondAttribute="bottom" constant="18" id="NFw-IH-ZoC"/>
+                            <constraint firstAttribute="centerX" secondItem="XsH-ZW-a0w" secondAttribute="centerX" id="OMD-1z-Lz3"/>
+                            <constraint firstItem="qaK-8A-1of" firstAttribute="leading" secondItem="i8D-ml-sBD" secondAttribute="leading" id="S5T-lf-Ye1"/>
                             <constraint firstItem="QP6-A0-Evj" firstAttribute="top" secondItem="ofT-Ik-IxJ" secondAttribute="bottom" constant="122" id="SpT-8m-Aoq"/>
-                            <constraint firstAttribute="centerX" secondItem="XsH-ZW-a0w" secondAttribute="centerX" id="dnA-Xg-KSC"/>
-                            <constraint firstAttribute="trailing" secondItem="zAt-Vf-R4M" secondAttribute="trailing" constant="123" id="huk-bH-qQ7"/>
+                            <constraint firstItem="XLT-lr-fC1" firstAttribute="top" secondItem="QP6-A0-Evj" secondAttribute="bottom" constant="65" id="TCH-dU-lfj"/>
+                            <constraint firstItem="zAt-Vf-R4M" firstAttribute="leading" secondItem="QP6-A0-Evj" secondAttribute="trailing" constant="100" id="TFK-XC-Dmk"/>
+                            <constraint firstItem="XLT-lr-fC1" firstAttribute="leading" secondItem="hjf-RO-4wt" secondAttribute="leading" id="VUL-RF-LeS"/>
+                            <constraint firstItem="Pel-hy-Zgh" firstAttribute="top" secondItem="duL-ZO-iS7" secondAttribute="bottom" constant="8" symbolic="YES" id="VsS-ew-VHa"/>
+                            <constraint firstItem="mgY-nv-38T" firstAttribute="top" secondItem="3Dh-Tw-kJ5" secondAttribute="bottom" constant="18" id="bdp-9Z-Ivv"/>
+                            <constraint firstItem="XLT-lr-fC1" firstAttribute="centerY" secondItem="i8D-ml-sBD" secondAttribute="centerY" id="cg1-aS-nyt"/>
+                            <constraint firstItem="3Dh-Tw-kJ5" firstAttribute="centerY" secondItem="duL-ZO-iS7" secondAttribute="centerY" id="dLb-WP-HbB"/>
+                            <constraint firstItem="XLT-lr-fC1" firstAttribute="leading" secondItem="mgY-nv-38T" secondAttribute="leading" id="igt-pD-fZI"/>
+                            <constraint firstItem="i8D-ml-sBD" firstAttribute="top" secondItem="zAt-Vf-R4M" secondAttribute="bottom" constant="50" id="lGG-HW-q49"/>
+                            <constraint firstItem="3Dh-Tw-kJ5" firstAttribute="leading" secondItem="QP6-A0-Evj" secondAttribute="leading" id="p1o-GV-OhU"/>
+                            <constraint firstItem="3Dh-Tw-kJ5" firstAttribute="leading" secondItem="hjf-RO-4wt" secondAttribute="leading" id="qmb-KQ-50J"/>
+                            <constraint firstItem="hjf-RO-4wt" firstAttribute="top" secondItem="XLT-lr-fC1" secondAttribute="bottom" constant="46" id="thF-lX-i22"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Filters" id="nMd-fd-4NI"/>
                     <connections>
+                        <outlet property="foodCategoryLabel" destination="hjf-RO-4wt" id="xc2-Uf-yPE"/>
+                        <outlet property="foodCategorySwitch" destination="qaK-8A-1of" id="vTL-WX-B5q"/>
                         <outlet property="hasDealsSwitch" destination="zAt-Vf-R4M" id="sAF-T5-hJd"/>
+                        <outlet property="healthCategoryLabel" destination="3Dh-Tw-kJ5" id="uwU-Yq-AeY"/>
+                        <outlet property="healthCategorySwitch" destination="duL-ZO-iS7" id="Yko-ZK-9U7"/>
+                        <outlet property="petCategoryLabel" destination="mgY-nv-38T" id="B7n-qi-9aS"/>
+                        <outlet property="petCategorySwitch" destination="Pel-hy-Zgh" id="rcL-YU-8kP"/>
+                        <outlet property="showCategoriesSwitch" destination="i8D-ml-sBD" id="jyA-7i-AaZ"/>
                         <outlet property="sortBySegmentedControl" destination="XsH-ZW-a0w" id="b1L-60-UmN"/>
                     </connections>
                 </viewController>

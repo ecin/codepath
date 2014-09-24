@@ -61,7 +61,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func redoSearch() {
-        println("Searching...")
+        println("Searching for \(search.categories)")
         Business.clear()
         self.businessesTableView.reloadData()
         search.execute({ (businesses) in
