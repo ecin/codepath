@@ -23,6 +23,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         searchBar.delegate = self
         
         navigationBar.titleView = searchBar
+        
         redoSearch()
     }
 
