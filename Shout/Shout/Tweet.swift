@@ -11,37 +11,68 @@ import Foundation
 import Social
 
 private var accounts: [ACAccount] = []
-private var tweets: NSArray = []
+private var tweets: [Tweet] = []
 
 class Tweet {
-    class func fetch(limit: Int = 20, offset: Int = 0) {
-        if accounts.count == 0 {
-            println("There are no Twitter accounts configured. You can add or create a Twitter account in Settings.")
-        } else {
-            let twitterAccount = accounts[0] as ACAccount
-            let requestURL = NSURL(string: "https://api.twitter.com/1/statuses/home_timeline.json")
-            
-            let parameters: [String:String] = [
-                "count": String(limit),
-                "offset": String(offset),
-                "include_entities": "0",
-            ]
-            
-            let request = SLRequest(forServiceType: SLServiceTypeTwitter, requestMethod: SLRequestMethod.GET, URL: requestURL, parameters: parameters)
-            
-            request.account = twitterAccount
-            request.performRequestWithHandler() {
-                data, response, error in
-                var error: NSError?
-                let dataSource = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableLeaves, error: &error) as NSArray
-                
-                tweets = dataSource
-            }
+    class User {
+        var username: String = ""
+        var name: String = ""
+        var description: String = ""
+        
+        init() { }
+        
+        init(dictionary: NSDictionary) {
+            username = dictionary["screen_name"] as String
+            name = dictionary["name"] as String
+            description = dictionary["description"] as String
         }
     }
     
-    init(fromDictionary: NSDictionary) {
+    class func count() -> Int {
+        return tweets.count
+    }
+    
+    class func get(index: Int) -> Tweet {
+        return tweets[index]
+    }
+    
+    class func fetch(account: ACAccount, limit: Int = 20, offset: Int = 0, success: (tweets: [Tweet]) -> ()) {
+        let requestURL = NSURL(string: "https://api.twitter.com/1/statuses/home_timeline.json")
         
+        let parameters: [String:String] = [
+            "count": String(limit),
+            "offset": String(offset),
+            "include_entities": "0",
+        ]
+        
+        let request = SLRequest(forServiceType: SLServiceTypeTwitter, requestMethod: SLRequestMethod.GET, URL: requestURL, parameters: parameters)
+        
+        request.account = account
+        request.performRequestWithHandler() {
+            data, response, error in
+            var error: NSError?
+            let dataSource = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableLeaves, error: &error) as NSArray
+            
+            for data in dataSource {
+                var tweet = Tweet(dictionary: data as NSDictionary)
+                tweets.append(tweet)
+            }
+            
+            success(tweets: tweets)
+        }
+    }
+    
+    var id: Int = 0
+    var user: User = User()
+    var text: String = ""
+    var timestamp: String = ""
+//    var createdAt: NSDate = NSDate()
+    
+    init(dictionary: NSDictionary) {
+        id = dictionary["id"] as Int
+        user = User(dictionary: dictionary["user"] as NSDictionary)
+        text = dictionary["text"] as String
+        timestamp = dictionary["created_at"] as String
     }
     
     class func authenticate(consumerKey: String, consumerSecret: String, success: ([ACAccount]) -> ()) -> Bool {

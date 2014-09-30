@@ -19,14 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let path = bundle.pathForResource("tweets", ofType: "json")
         var error: NSError? = NSError()
         let content = NSString(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: &error) as String
-        println(content)
+//        println(content)
         
         let data: NSData = content.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)!
         
-        Tweet.authenticate("XOLEHC3pAniBxG2CsQ5tYisl6", consumerSecret: "kylFhjIuX36JHftNacmz8EKHpAwSE6h7fHX4wa0jCignhOp0as") {
-            accounts in
-            Tweet.fetch()
-        }
+//        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+//        let rootController = ViewController()
+//        
+//        self.window?.rootViewController = rootController
+//        self.window?.makeKeyAndVisible()
+
         return true
     }
 
