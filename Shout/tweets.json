@@ -1,0 +1,2229 @@
+[
+{
+    contributors = "<null>";
+    coordinates =     {
+        coordinates =         (
+                               "5.58075099",
+                               "50.64404179"
+                               );
+        type = Point;
+    };
+    "created_at" = "Tue Sep 30 17:37:57 +0000 2014";
+    entities =     {
+        hashtags =         (
+                            {
+                            indices =                 (
+                                                       50,
+                                                       60
+                                                       );
+                            text = Windows10;
+                            }
+                            );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 1;
+    favorited = 0;
+    geo =     {
+        coordinates =         (
+                               "50.64404179",
+                               "5.58075099"
+                               );
+        type = Point;
+    };
+    id = 517005439880679427;
+    "id_str" = 517005439880679427;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place =     {
+        attributes =         {
+        };
+        "bounding_box" =         {
+            coordinates =             (
+                                       (
+                                        (
+                                         "5.5234336",
+                                         "50.5609781"
+                                         ),
+                                        (
+                                         "5.6752509",
+                                         "50.5609781"
+                                         ),
+                                        (
+                                         "5.6752509",
+                                         "50.6881875"
+                                         ),
+                                        (
+                                         "5.5234336",
+                                         "50.6881875"
+                                         )
+                                        )
+                                       );
+            type = Polygon;
+        };
+        "contained_within" =         (
+        );
+        country = "Belgi\U00eb";
+        "country_code" = BE;
+        "full_name" = Liege;
+        id = 41d3af882c2bb758;
+        name = Liege;
+        "place_type" = city;
+        url = "https://api.twitter.com/1.1/geo/id/41d3af882c2bb758.json";
+    };
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://tapbots.com/software/tweetbot/mac\" rel=\"nofollow\">Tweetbot for Mac</a>";
+    text = "Would not have happened if Ballmer was still CEO. #Windows10";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Wed Nov 21 21:48:30 +0000 2007";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Belgian software hacker, husband, dad and cat wrangler. Founder of @HipByte. I work on @RubyMotion. Former Apple employee, @MacRuby author.";
+        "favourites_count" = 638;
+        "follow_request_sent" = 0;
+        "followers_count" = 4893;
+        following = 1;
+        "friends_count" = 338;
+        "geo_enabled" = 1;
+        id = 10452222;
+        "id_str" = 10452222;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 365;
+        location = Belgium;
+        name = "Laurent Sansonetti";
+        notifications = 0;
+        "profile_background_color" = FFFFFF;
+        "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/10452222/1398388475";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/459499652228714497/EiSPykkq_normal.png";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/459499652228714497/EiSPykkq_normal.png";
+        "profile_link_color" = 6E6E6E;
+        "profile_sidebar_border_color" = 181A1E;
+        "profile_sidebar_fill_color" = EBEBEB;
+        "profile_text_color" = 000000;
+        "profile_use_background_image" = 0;
+        protected = 0;
+        "screen_name" = lrz;
+        "statuses_count" = 17434;
+        "time_zone" = Paris;
+        url = "http://chopine.be";
+        "utc_offset" = 7200;
+        verified = 0;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:37:10 +0000 2014";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                        "display_url" = "rubysteps.com/mob_with_alist\U2026";
+                        "expanded_url" = "https://rubysteps.com/mob_with_alistair";
+                        indices =                 (
+                                                   83,
+                                                   106
+                                                   );
+                        url = "https://t.co/lD9IdHnWws";
+                        }
+                        );
+        "user_mentions" =         (
+                                   {
+                                   id = 17270001;
+                                   "id_str" = 17270001;
+                                   indices =                 (
+                                                              24,
+                                                              39
+                                                              );
+                                   name = "Alistair Cockburn";
+                                   "screen_name" = TotherAlistair;
+                                   }
+                                   );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 517005243016417280;
+    "id_str" = 517005243016417280;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>";
+    text = "heyo mob programming w/ @TotherAlistair starts in less than an hour. OMG SO EXCITE https://t.co/lD9IdHnWws";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Fri May 30 15:43:20 +0000 2008";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "21st century collaborative human. Prolific hugger. Unite the people";
+        "favourites_count" = 2566;
+        "follow_request_sent" = 0;
+        "followers_count" = 1814;
+        following = 1;
+        "friends_count" = 1061;
+        "geo_enabled" = 1;
+        id = 14955528;
+        "id_str" = 14955528;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 166;
+        location = "west coast is the best coast";
+        name = "Pat Maddox";
+        notifications = 0;
+        "profile_background_color" = 078300;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/118113334/oakley.jpg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/118113334/oakley.jpg";
+        "profile_background_tile" = 0;
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/3310115264/0eabb481dbeed11a52f54d2976323385_normal.png";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/3310115264/0eabb481dbeed11a52f54d2976323385_normal.png";
+        "profile_link_color" = DE5E09;
+        "profile_sidebar_border_color" = 078300;
+        "profile_sidebar_fill_color" = D6D6D6;
+        "profile_text_color" = 15008F;
+        "profile_use_background_image" = 0;
+        protected = 0;
+        "screen_name" = patmaddox;
+        "statuses_count" = 18604;
+        "time_zone" = "Pacific Time (US & Canada)";
+        url = "http://patmaddox.com";
+        "utc_offset" = "-25200";
+        verified = 0;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:35:56 +0000 2014";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 517004934181847040;
+    "id_str" = 517004934181847040;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://tapbots.com/tweetbot\" rel=\"nofollow\">Tweetbot for i\U039fS</a>";
+    text = "I believe it might have even been in a compilation or whatever \n\nAnyway this is very important";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Sun Feb 01 11:07:05 +0000 2009";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "more like shitter -\n3DS Friend Code: 1478 4240 5850 SV: [949]";
+        "favourites_count" = 58;
+        "follow_request_sent" = 0;
+        "followers_count" = 2267;
+        following = 1;
+        "friends_count" = 52;
+        "geo_enabled" = 1;
+        id = 19853774;
+        "id_str" = 19853774;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 42;
+        location = "New York, NY";
+        name = "Veronica Vera";
+        notifications = 0;
+        "profile_background_color" = FFFFFF;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/120605903/tweetbg_low.jpg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/120605903/tweetbg_low.jpg";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/19853774/1370876760";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/75590923/Picture_11_normal.png";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/75590923/Picture_11_normal.png";
+        "profile_link_color" = 3275A8;
+        "profile_sidebar_border_color" = 3D94BD;
+        "profile_sidebar_fill_color" = E7EFF5;
+        "profile_text_color" = 3C3940;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = Taeshi;
+        "statuses_count" = 28475;
+        "time_zone" = "Eastern Time (US & Canada)";
+        url = "http://www.bittersweetcandybowl.com/";
+        "utc_offset" = "-14400";
+        verified = 0;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:34:28 +0000 2014";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 517004565989040128;
+    "id_str" = 517004565989040128;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://tapbots.com/tweetbot\" rel=\"nofollow\">Tweetbot for i\U039fS</a>";
+    text = "The ones I find end with the cat actually getting really noisy but the one I'm looking for is literally dejected \"nooo\" the whole time";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Sun Feb 01 11:07:05 +0000 2009";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "more like shitter -\n3DS Friend Code: 1478 4240 5850 SV: [949]";
+        "favourites_count" = 58;
+        "follow_request_sent" = 0;
+        "followers_count" = 2267;
+        following = 1;
+        "friends_count" = 52;
+        "geo_enabled" = 1;
+        id = 19853774;
+        "id_str" = 19853774;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 42;
+        location = "New York, NY";
+        name = "Veronica Vera";
+        notifications = 0;
+        "profile_background_color" = FFFFFF;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/120605903/tweetbg_low.jpg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/120605903/tweetbg_low.jpg";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/19853774/1370876760";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/75590923/Picture_11_normal.png";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/75590923/Picture_11_normal.png";
+        "profile_link_color" = 3275A8;
+        "profile_sidebar_border_color" = 3D94BD;
+        "profile_sidebar_fill_color" = E7EFF5;
+        "profile_text_color" = 3C3940;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = Taeshi;
+        "statuses_count" = 28475;
+        "time_zone" = "Eastern Time (US & Canada)";
+        url = "http://www.bittersweetcandybowl.com/";
+        "utc_offset" = "-14400";
+        verified = 0;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:33:40 +0000 2014";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 517004365966901248;
+    "id_str" = 517004365966901248;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://tapbots.com/tweetbot\" rel=\"nofollow\">Tweetbot for i\U039fS</a>";
+    text = "There's so many \"noooo\" cat videos on YouTube but there's a particular one that is the perfect one and I wanna find it";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Sun Feb 01 11:07:05 +0000 2009";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "more like shitter -\n3DS Friend Code: 1478 4240 5850 SV: [949]";
+        "favourites_count" = 58;
+        "follow_request_sent" = 0;
+        "followers_count" = 2267;
+        following = 1;
+        "friends_count" = 52;
+        "geo_enabled" = 1;
+        id = 19853774;
+        "id_str" = 19853774;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 42;
+        location = "New York, NY";
+        name = "Veronica Vera";
+        notifications = 0;
+        "profile_background_color" = FFFFFF;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/120605903/tweetbg_low.jpg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/120605903/tweetbg_low.jpg";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/19853774/1370876760";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/75590923/Picture_11_normal.png";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/75590923/Picture_11_normal.png";
+        "profile_link_color" = 3275A8;
+        "profile_sidebar_border_color" = 3D94BD;
+        "profile_sidebar_fill_color" = E7EFF5;
+        "profile_text_color" = 3C3940;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = Taeshi;
+        "statuses_count" = 28475;
+        "time_zone" = "Eastern Time (US & Canada)";
+        url = "http://www.bittersweetcandybowl.com/";
+        "utc_offset" = "-14400";
+        verified = 0;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:33:11 +0000 2014";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 517004242419453952;
+    "id_str" = 517004242419453952;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://tapbots.com/tweetbot\" rel=\"nofollow\">Tweetbot for i\U039fS</a>";
+    text = "Can anyone find the America's funniest home video with the cat that says \"nooooo\" BECAUSE I STILL CAN'T FIND _THE_ ONE";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Sun Feb 01 11:07:05 +0000 2009";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "more like shitter -\n3DS Friend Code: 1478 4240 5850 SV: [949]";
+        "favourites_count" = 58;
+        "follow_request_sent" = 0;
+        "followers_count" = 2267;
+        following = 1;
+        "friends_count" = 52;
+        "geo_enabled" = 1;
+        id = 19853774;
+        "id_str" = 19853774;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 42;
+        location = "New York, NY";
+        name = "Veronica Vera";
+        notifications = 0;
+        "profile_background_color" = FFFFFF;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/120605903/tweetbg_low.jpg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/120605903/tweetbg_low.jpg";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/19853774/1370876760";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/75590923/Picture_11_normal.png";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/75590923/Picture_11_normal.png";
+        "profile_link_color" = 3275A8;
+        "profile_sidebar_border_color" = 3D94BD;
+        "profile_sidebar_fill_color" = E7EFF5;
+        "profile_text_color" = 3C3940;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = Taeshi;
+        "statuses_count" = 28475;
+        "time_zone" = "Eastern Time (US & Canada)";
+        url = "http://www.bittersweetcandybowl.com/";
+        "utc_offset" = "-14400";
+        verified = 0;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:31:04 +0000 2014";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 517003707507281920;
+    "id_str" = 517003707507281920;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://sites.google.com/site/yorufukurou/\" rel=\"nofollow\">YoruFukurou</a>";
+    text = "bbiab, rebooting.";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Sat Jun 28 21:26:46 +0000 2008";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Build web apps in Ruby, Rails and Javascript. Father. Husband. Business Owner. Libertarian. Gentoo on servers, Mac for dev.";
+        "favourites_count" = 215;
+        "follow_request_sent" = 0;
+        "followers_count" = 392;
+        following = 1;
+        "friends_count" = 325;
+        "geo_enabled" = 0;
+        id = 15266123;
+        "id_str" = 15266123;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 28;
+        location = Toronto;
+        name = "Philip Ingram";
+        notifications = 0;
+        "profile_background_color" = FCEBB6;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/473066932665479168/mrZa96Pw.png";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/473066932665479168/mrZa96Pw.png";
+        "profile_background_tile" = 1;
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/2630817812/be1211f7f259de1ce1671c00646878cc_normal.jpeg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/2630817812/be1211f7f259de1ce1671c00646878cc_normal.jpeg";
+        "profile_link_color" = CE7834;
+        "profile_sidebar_border_color" = F0A830;
+        "profile_sidebar_fill_color" = 78C0A8;
+        "profile_text_color" = 5E412F;
+        "profile_use_background_image" = 0;
+        protected = 0;
+        "screen_name" = pjammer;
+        "statuses_count" = 18539;
+        "time_zone" = Quito;
+        url = "http://www.ingraminternet.com";
+        "utc_offset" = "-18000";
+        verified = 0;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:28:33 +0000 2014";
+    entities =     {
+        hashtags =         (
+                            {
+                            indices =                 (
+                                                       126,
+                                                       136
+                                                       );
+                            text = Windows10;
+                            }
+                            );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 1;
+    favorited = 0;
+    geo = "<null>";
+    id = 517003074762977280;
+    "id_str" = 517003074762977280;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>";
+    text = "So, if I understand this correctly, with the upcoming version of Windows, Microsoft is now where Apple was with OS X in 2001? #Windows10";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Tue Feb 27 12:26:55 +0000 2007";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "I run Fingertips (@fngtps), a design and development agency for websites and apps.";
+        "favourites_count" = 4150;
+        "follow_request_sent" = 0;
+        "followers_count" = 2854;
+        following = 1;
+        "friends_count" = 238;
+        "geo_enabled" = 1;
+        id = 797975;
+        "id_str" = 797975;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 180;
+        location = "Amsterdam, The Netherlands";
+        name = "Thijs van der Vossen";
+        notifications = 0;
+        "profile_background_color" = FFFFFF;
+        "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/797975/1399913132";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/2308659097/Avatar6_normal.png";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/2308659097/Avatar6_normal.png";
+        "profile_link_color" = 828282;
+        "profile_sidebar_border_color" = FFFFFF;
+        "profile_sidebar_fill_color" = F2F2F2;
+        "profile_text_color" = 000000;
+        "profile_use_background_image" = 0;
+        protected = 0;
+        "screen_name" = thijs;
+        "statuses_count" = 37873;
+        "time_zone" = Amsterdam;
+        url = "http://www.vandervossen.net";
+        "utc_offset" = 7200;
+        verified = 0;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:27:22 +0000 2014";
+    entities =     {
+        hashtags =         (
+        );
+        media =         (
+                         {
+                         "display_url" = "pic.twitter.com/dVdxPtrnyP";
+                         "expanded_url" = "http://twitter.com/thefoxisblack/status/517002778388881408/photo/1";
+                         id = 517002777390616577;
+                         "id_str" = 517002777390616577;
+                         indices =                 (
+                                                    96,
+                                                    118
+                                                    );
+                         "media_url" = "http://pbs.twimg.com/media/ByzDSW5CEAEYCk2.jpg";
+                         "media_url_https" = "https://pbs.twimg.com/media/ByzDSW5CEAEYCk2.jpg";
+                         sizes =                 {
+                         large =                     {
+                         h = 995;
+                         resize = fit;
+                         w = 800;
+                         };
+                         medium =                     {
+                         h = 746;
+                         resize = fit;
+                         w = 600;
+                         };
+                         small =                     {
+                         h = 422;
+                         resize = fit;
+                         w = 340;
+                         };
+                         thumb =                     {
+                         h = 150;
+                         resize = crop;
+                         w = 150;
+                         };
+                         };
+                         type = photo;
+                         url = "http://t.co/dVdxPtrnyP";
+                         }
+                         );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                        "display_url" = "bit.ly/1rBgSui";
+                        "expanded_url" = "http://bit.ly/1rBgSui";
+                        indices =                 (
+                                                   73,
+                                                   95
+                                                   );
+                        url = "http://t.co/DKyZWchyIu";
+                        }
+                        );
+        "user_mentions" =         (
+        );
+    };
+    "extended_entities" =     {
+        media =         (
+                         {
+                         "display_url" = "pic.twitter.com/dVdxPtrnyP";
+                         "expanded_url" = "http://twitter.com/thefoxisblack/status/517002778388881408/photo/1";
+                         id = 517002777390616577;
+                         "id_str" = 517002777390616577;
+                         indices =                 (
+                                                    96,
+                                                    118
+                                                    );
+                         "media_url" = "http://pbs.twimg.com/media/ByzDSW5CEAEYCk2.jpg";
+                         "media_url_https" = "https://pbs.twimg.com/media/ByzDSW5CEAEYCk2.jpg";
+                         sizes =                 {
+                         large =                     {
+                         h = 995;
+                         resize = fit;
+                         w = 800;
+                         };
+                         medium =                     {
+                         h = 746;
+                         resize = fit;
+                         w = 600;
+                         };
+                         small =                     {
+                         h = 422;
+                         resize = fit;
+                         w = 340;
+                         };
+                         thumb =                     {
+                         h = 150;
+                         resize = crop;
+                         w = 150;
+                         };
+                         };
+                         type = photo;
+                         url = "http://t.co/dVdxPtrnyP";
+                         }
+                         );
+    };
+    "favorite_count" = 4;
+    favorited = 0;
+    geo = "<null>";
+    id = 517002778388881408;
+    "id_str" = 517002778388881408;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://itunes.apple.com/us/app/twitter/id409789998?mt=12\" rel=\"nofollow\">Twitter for Mac</a>";
+    text = "Scott Albrecht's art reflects on time, perception and interconnectivity. http://t.co/DKyZWchyIu http://t.co/dVdxPtrnyP";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Wed Apr 04 22:58:55 +0000 2007";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Editor-In-Chief of The Fox Is Black, a culture blog showcasing matters of design and design that matters.";
+        "favourites_count" = 2456;
+        "follow_request_sent" = 0;
+        "followers_count" = 37606;
+        following = 1;
+        "friends_count" = 158;
+        "geo_enabled" = 1;
+        id = 3468981;
+        "id_str" = 3468981;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 2190;
+        location = "Los Angeles, CA";
+        name = "Bobby Solomon";
+        notifications = 0;
+        "profile_background_color" = EBEBEB;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/787720286/b487b990cf8308d1937b0bfab8484f12.jpeg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/787720286/b487b990cf8308d1937b0bfab8484f12.jpeg";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/3468981/1404801453";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/488508479120756737/r4VgVXVl_normal.jpeg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/488508479120756737/r4VgVXVl_normal.jpeg";
+        "profile_link_color" = BE7F12;
+        "profile_sidebar_border_color" = FFFFFF;
+        "profile_sidebar_fill_color" = FFFFFF;
+        "profile_text_color" = 545454;
+        "profile_use_background_image" = 0;
+        protected = 0;
+        "screen_name" = thefoxisblack;
+        "statuses_count" = 25562;
+        "time_zone" = "Pacific Time (US & Canada)";
+        url = "http://www.thefoxisblack.com";
+        "utc_offset" = "-25200";
+        verified = 0;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:27:01 +0000 2014";
+    entities =     {
+        hashtags =         (
+        );
+        media =         (
+                         {
+                         "display_url" = "pic.twitter.com/67IDC0aVQs";
+                         "expanded_url" = "http://twitter.com/mrgan/status/517002689641988096/photo/1";
+                         id = 517002688785940480;
+                         "id_str" = 517002688785940480;
+                         indices =                 (
+                                                    118,
+                                                    140
+                                                    );
+                         "media_url" = "http://pbs.twimg.com/media/ByzDNM0CAAAwbVG.jpg";
+                         "media_url_https" = "https://pbs.twimg.com/media/ByzDNM0CAAAwbVG.jpg";
+                         sizes =                 {
+                         large =                     {
+                         h = 2048;
+                         resize = fit;
+                         w = 994;
+                         };
+                         medium =                     {
+                         h = 1200;
+                         resize = fit;
+                         w = 582;
+                         };
+                         small =                     {
+                         h = 680;
+                         resize = fit;
+                         w = 330;
+                         };
+                         thumb =                     {
+                         h = 150;
+                         resize = crop;
+                         w = 150;
+                         };
+                         };
+                         type = photo;
+                         url = "http://t.co/67IDC0aVQs";
+                         }
+                         );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+        );
+    };
+    "extended_entities" =     {
+        media =         (
+                         {
+                         "display_url" = "pic.twitter.com/67IDC0aVQs";
+                         "expanded_url" = "http://twitter.com/mrgan/status/517002689641988096/photo/1";
+                         id = 517002688785940480;
+                         "id_str" = 517002688785940480;
+                         indices =                 (
+                                                    118,
+                                                    140
+                                                    );
+                         "media_url" = "http://pbs.twimg.com/media/ByzDNM0CAAAwbVG.jpg";
+                         "media_url_https" = "https://pbs.twimg.com/media/ByzDNM0CAAAwbVG.jpg";
+                         sizes =                 {
+                         large =                     {
+                         h = 2048;
+                         resize = fit;
+                         w = 994;
+                         };
+                         medium =                     {
+                         h = 1200;
+                         resize = fit;
+                         w = 582;
+                         };
+                         small =                     {
+                         h = 680;
+                         resize = fit;
+                         w = 330;
+                         };
+                         thumb =                     {
+                         h = 150;
+                         resize = crop;
+                         w = 150;
+                         };
+                         };
+                         type = photo;
+                         url = "http://t.co/67IDC0aVQs";
+                         }
+                         );
+    };
+    "favorite_count" = 4;
+    favorited = 0;
+    geo = "<null>";
+    id = 517002689641988096;
+    "id_str" = 517002689641988096;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "retweet_count" = 5;
+    retweeted = 0;
+    source = "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>";
+    text = "This Windows event makes the awkward moments of the \Uf8ff\U2009Watch keynote seem like ballet. Are they in someone's basement? http://t.co/67IDC0aVQs";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Fri Dec 01 23:44:52 +0000 2006";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "One of the good ones.";
+        "favourites_count" = 24574;
+        "follow_request_sent" = 0;
+        "followers_count" = 17674;
+        following = 1;
+        "friends_count" = 291;
+        "geo_enabled" = 1;
+        id = 35293;
+        "id_str" = 35293;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 1413;
+        location = "Portland, OR";
+        name = "Neven Mrgan";
+        notifications = 0;
+        "profile_background_color" = B0DC62;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/19582992/glyphs1.png";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/19582992/glyphs1.png";
+        "profile_background_tile" = 1;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/35293/1398205241";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/475861465564327937/oIwV6Tdf_normal.png";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/475861465564327937/oIwV6Tdf_normal.png";
+        "profile_link_color" = 55AE11;
+        "profile_sidebar_border_color" = FFFFFF;
+        "profile_sidebar_fill_color" = FFFFFF;
+        "profile_text_color" = 000000;
+        "profile_use_background_image" = 0;
+        protected = 0;
+        "screen_name" = mrgan;
+        "statuses_count" = 50524;
+        "time_zone" = "Eastern Time (US & Canada)";
+        url = "http://mrgan.com";
+        "utc_offset" = "-14400";
+        verified = 0;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:25:28 +0000 2014";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 1;
+    favorited = 0;
+    geo = "<null>";
+    id = 517002299152285696;
+    "id_str" = 517002299152285696;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://www.echofon.com/\" rel=\"nofollow\">Echofon</a>";
+    text = "A year might simply not be enough to do good design and development work if you\U2019re working on a major new version of your OS.";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Tue Feb 27 12:26:55 +0000 2007";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "I run Fingertips (@fngtps), a design and development agency for websites and apps.";
+        "favourites_count" = 4150;
+        "follow_request_sent" = 0;
+        "followers_count" = 2854;
+        following = 1;
+        "friends_count" = 238;
+        "geo_enabled" = 1;
+        id = 797975;
+        "id_str" = 797975;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 180;
+        location = "Amsterdam, The Netherlands";
+        name = "Thijs van der Vossen";
+        notifications = 0;
+        "profile_background_color" = FFFFFF;
+        "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/797975/1399913132";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/2308659097/Avatar6_normal.png";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/2308659097/Avatar6_normal.png";
+        "profile_link_color" = 828282;
+        "profile_sidebar_border_color" = FFFFFF;
+        "profile_sidebar_fill_color" = F2F2F2;
+        "profile_text_color" = 000000;
+        "profile_use_background_image" = 0;
+        protected = 0;
+        "screen_name" = thijs;
+        "statuses_count" = 37873;
+        "time_zone" = Amsterdam;
+        url = "http://www.vandervossen.net";
+        "utc_offset" = 7200;
+        verified = 0;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:24:12 +0000 2014";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 517001981857382402;
+    "id_str" = 517001981857382402;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>";
+    text = "Design is My Favorite Job";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Fri Apr 17 03:19:17 +0000 2009";
+        "default_profile" = 1;
+        "default_profile_image" = 0;
+        description = "Director of Business Affairs for Adobe Typekit: Sales, marketing, customer support & finance. Opinions are my own.";
+        "favourites_count" = 478;
+        "follow_request_sent" = 0;
+        "followers_count" = 640;
+        following = 1;
+        "friends_count" = 790;
+        "geo_enabled" = 1;
+        id = 32283629;
+        "id_str" = 32283629;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 24;
+        location = "Jim Thorpe PA & Front St. NYC";
+        name = "Matthew Rechs";
+        notifications = 0;
+        "profile_background_color" = C0DEED;
+        "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/32283629/1400331351";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/459391907202752512/UAevcuE3_normal.jpeg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/459391907202752512/UAevcuE3_normal.jpeg";
+        "profile_link_color" = 0084B4;
+        "profile_sidebar_border_color" = C0DEED;
+        "profile_sidebar_fill_color" = DDEEF6;
+        "profile_text_color" = 333333;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = mrechs;
+        "statuses_count" = 2186;
+        "time_zone" = "Eastern Time (US & Canada)";
+        url = "http://about.me/rechsm";
+        "utc_offset" = "-14400";
+        verified = 0;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:21:53 +0000 2014";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+                                   {
+                                   id = 2426;
+                                   "id_str" = 2426;
+                                   indices =                 (
+                                                              25,
+                                                              34
+                                                              );
+                                   name = "Mike Monteiro";
+                                   "screen_name" = monteiro;
+                                   }
+                                   );
+    };
+    "favorite_count" = 2;
+    favorited = 0;
+    geo = "<null>";
+    id = 517001400145154048;
+    "id_str" = 517001400145154048;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>";
+    text = "Hey does anybody know if @monteiro's new book is out, or what it might be called? ANYBODY";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Fri Apr 17 03:19:17 +0000 2009";
+        "default_profile" = 1;
+        "default_profile_image" = 0;
+        description = "Director of Business Affairs for Adobe Typekit: Sales, marketing, customer support & finance. Opinions are my own.";
+        "favourites_count" = 478;
+        "follow_request_sent" = 0;
+        "followers_count" = 640;
+        following = 1;
+        "friends_count" = 790;
+        "geo_enabled" = 1;
+        id = 32283629;
+        "id_str" = 32283629;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 24;
+        location = "Jim Thorpe PA & Front St. NYC";
+        name = "Matthew Rechs";
+        notifications = 0;
+        "profile_background_color" = C0DEED;
+        "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/32283629/1400331351";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/459391907202752512/UAevcuE3_normal.jpeg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/459391907202752512/UAevcuE3_normal.jpeg";
+        "profile_link_color" = 0084B4;
+        "profile_sidebar_border_color" = C0DEED;
+        "profile_sidebar_fill_color" = DDEEF6;
+        "profile_text_color" = 333333;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = mrechs;
+        "statuses_count" = 2186;
+        "time_zone" = "Eastern Time (US & Canada)";
+        url = "http://about.me/rechsm";
+        "utc_offset" = "-14400";
+        verified = 0;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:21:13 +0000 2014";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 517001228841013248;
+    "id_str" = 517001228841013248;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://itunes.apple.com/us/app/twitter/id409789998?mt=12\" rel=\"nofollow\">Twitter for Mac</a>";
+    text = "Shit, got to redeem my \U00a350 Amazon voucher from my last birthday right away or it\U2019ll expire. What product should I own?";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Fri Mar 14 22:41:43 +0000 2008";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Ridiculous boy";
+        "favourites_count" = 10320;
+        "follow_request_sent" = 0;
+        "followers_count" = 1786;
+        following = 1;
+        "friends_count" = 870;
+        "geo_enabled" = 1;
+        id = 14149919;
+        "id_str" = 14149919;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 73;
+        location = "";
+        name = "Aanand Prasad";
+        notifications = 0;
+        "profile_background_color" = E6E6E6;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/688305396/47f5663db7099d601996eab4ea442b90.jpeg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/688305396/47f5663db7099d601996eab4ea442b90.jpeg";
+        "profile_background_tile" = 1;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/14149919/1411439326";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/508788722813247488/6muZT3d-_normal.jpeg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/508788722813247488/6muZT3d-_normal.jpeg";
+        "profile_link_color" = A010A8;
+        "profile_sidebar_border_color" = FFFFFF;
+        "profile_sidebar_fill_color" = FFCB88;
+        "profile_text_color" = 333333;
+        "profile_use_background_image" = 0;
+        protected = 0;
+        "screen_name" = aanand;
+        "statuses_count" = 17566;
+        "time_zone" = London;
+        url = "http://aanandprasad.com";
+        "utc_offset" = 3600;
+        verified = 0;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:19:56 +0000 2014";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 517000906374938625;
+    "id_str" = 517000906374938625;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://sites.google.com/site/yorufukurou/\" rel=\"nofollow\">YoruFukurou</a>";
+    text = "Are people this lame, and that is why Facebook's Trending just trends bullshit to me all day, or is it a paid thing? Not sure what i like mo";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Sat Jun 28 21:26:46 +0000 2008";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Build web apps in Ruby, Rails and Javascript. Father. Husband. Business Owner. Libertarian. Gentoo on servers, Mac for dev.";
+        "favourites_count" = 215;
+        "follow_request_sent" = 0;
+        "followers_count" = 392;
+        following = 1;
+        "friends_count" = 325;
+        "geo_enabled" = 0;
+        id = 15266123;
+        "id_str" = 15266123;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 28;
+        location = Toronto;
+        name = "Philip Ingram";
+        notifications = 0;
+        "profile_background_color" = FCEBB6;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/473066932665479168/mrZa96Pw.png";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/473066932665479168/mrZa96Pw.png";
+        "profile_background_tile" = 1;
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/2630817812/be1211f7f259de1ce1671c00646878cc_normal.jpeg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/2630817812/be1211f7f259de1ce1671c00646878cc_normal.jpeg";
+        "profile_link_color" = CE7834;
+        "profile_sidebar_border_color" = F0A830;
+        "profile_sidebar_fill_color" = 78C0A8;
+        "profile_text_color" = 5E412F;
+        "profile_use_background_image" = 0;
+        protected = 0;
+        "screen_name" = pjammer;
+        "statuses_count" = 18539;
+        "time_zone" = Quito;
+        url = "http://www.ingraminternet.com";
+        "utc_offset" = "-18000";
+        verified = 0;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:15:47 +0000 2014";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+                                   {
+                                   id = 20506446;
+                                   "id_str" = 20506446;
+                                   indices =                 (
+                                                              3,
+                                                              15
+                                                              );
+                                   name = "Greg Ferrell";
+                                   "screen_name" = gregferrell;
+                                   },
+                                   {
+                                   id = 55525953;
+                                   "id_str" = 55525953;
+                                   indices =                 (
+                                                              17,
+                                                              26
+                                                              );
+                                   name = Pinboard;
+                                   "screen_name" = Pinboard;
+                                   }
+                                   );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 516999864459083777;
+    "id_str" = 516999864459083777;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "retweet_count" = 6;
+    retweeted = 0;
+    "retweeted_status" =     {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Tue Sep 30 17:15:31 +0000 2014";
+        entities =         {
+            hashtags =             (
+            );
+            symbols =             (
+            );
+            urls =             (
+            );
+            "user_mentions" =             (
+                                           {
+                                           id = 55525953;
+                                           "id_str" = 55525953;
+                                           indices =                     (
+                                                                          0,
+                                                                          9
+                                                                          );
+                                           name = Pinboard;
+                                           "screen_name" = Pinboard;
+                                           }
+                                           );
+        };
+        "favorite_count" = 19;
+        favorited = 0;
+        geo = "<null>";
+        id = 516999794313539584;
+        "id_str" = 516999794313539584;
+        "in_reply_to_screen_name" = Pinboard;
+        "in_reply_to_status_id" = 516999566751563779;
+        "in_reply_to_status_id_str" = 516999566751563779;
+        "in_reply_to_user_id" = 55525953;
+        "in_reply_to_user_id_str" = 55525953;
+        lang = en;
+        place = "<null>";
+        "retweet_count" = 6;
+        retweeted = 0;
+        source = "<a href=\"http://tapbots.com/software/tweetbot/mac\" rel=\"nofollow\">Tweetbot for Mac</a>";
+        text = "@Pinboard Go to a coffee shop. Post silly startup tweet. 10 seconds later hear \U201c\U2026shit\U201d whispered by 5 unrelated people in sock-caps.";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Tue Feb 10 11:05:46 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "Lead Software Dev @Solspace. Also Enjoys: Miniature Painting, RPGs, JavaScript, PHP, Python, Pro-Feminism";
+            "favourites_count" = 5109;
+            "follow_request_sent" = 0;
+            "followers_count" = 1173;
+            following = 0;
+            "friends_count" = 887;
+            "geo_enabled" = 0;
+            id = 20506446;
+            "id_str" = 20506446;
+            "is_translation_enabled" = 0;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 114;
+            location = "";
+            name = "Greg Ferrell";
+            notifications = 0;
+            "profile_background_color" = 1A1B1F;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme9/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme9/bg.gif";
+            "profile_background_tile" = 0;
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/505903991599808512/OBxzTOYC_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/505903991599808512/OBxzTOYC_normal.jpeg";
+            "profile_link_color" = 2FC2EF;
+            "profile_sidebar_border_color" = 181A1E;
+            "profile_sidebar_fill_color" = 252429;
+            "profile_text_color" = 666666;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = gregferrell;
+            "statuses_count" = 40636;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "<null>";
+            "utc_offset" = "-25200";
+            verified = 0;
+        };
+    };
+    source = "<a href=\"http://sites.google.com/site/yorufukurou/\" rel=\"nofollow\">YoruFukurou</a>";
+    text = "RT @gregferrell: @Pinboard Go to a coffee shop. Post silly startup tweet. 10 seconds later hear \U201c\U2026shit\U201d whispered by 5 unrelated people in \U2026";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Fri Jul 10 10:24:12 +0000 2009";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Enterprise tweet platform";
+        "favourites_count" = 28;
+        "follow_request_sent" = 0;
+        "followers_count" = 23046;
+        following = 1;
+        "friends_count" = 6;
+        "geo_enabled" = 0;
+        id = 55525953;
+        "id_str" = 55525953;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 1575;
+        location = "San Francisco";
+        name = Pinboard;
+        notifications = 0;
+        "profile_background_color" = FFFFFF;
+        "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_tile" = 0;
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/494414965/logo_normal.png";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/494414965/logo_normal.png";
+        "profile_link_color" = 0084B4;
+        "profile_sidebar_border_color" = BDDCAD;
+        "profile_sidebar_fill_color" = FFFFFF;
+        "profile_text_color" = 333333;
+        "profile_use_background_image" = 0;
+        protected = 0;
+        "screen_name" = Pinboard;
+        "statuses_count" = 17187;
+        "time_zone" = Bucharest;
+        url = "http://pinboard.in";
+        "utc_offset" = 10800;
+        verified = 0;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:15:45 +0000 2014";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                        "display_url" = "972mag.com/settlers-take-\U2026";
+                        "expanded_url" = "http://972mag.com/settlers-take-over-7-e-jerusalem-homes-in-dead-of-night/97167/";
+                        indices =                 (
+                                                   106,
+                                                   128
+                                                   );
+                        url = "http://t.co/7X5iBnNPn8";
+                        }
+                        );
+        "user_mentions" =         (
+                                   {
+                                   id = 19146492;
+                                   "id_str" = 19146492;
+                                   indices =                 (
+                                                              3,
+                                                              12
+                                                              );
+                                   name = "Matt Duss";
+                                   "screen_name" = mattduss;
+                                   }
+                                   );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 516999855949221888;
+    "id_str" = 516999855949221888;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "retweet_count" = 7;
+    retweeted = 0;
+    "retweeted_status" =     {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Tue Sep 30 17:14:27 +0000 2014";
+        entities =         {
+            hashtags =             (
+            );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                                "display_url" = "972mag.com/settlers-take-\U2026";
+                                "expanded_url" = "http://972mag.com/settlers-take-over-7-e-jerusalem-homes-in-dead-of-night/97167/";
+                                indices =                     (
+                                                               92,
+                                                               114
+                                                               );
+                                url = "http://t.co/7X5iBnNPn8";
+                                }
+                                );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 1;
+        favorited = 0;
+        geo = "<null>";
+        id = 516999529594646528;
+        "id_str" = 516999529594646528;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = en;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "retweet_count" = 7;
+        retweeted = 0;
+        source = "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>";
+        text = "\"The goal is clear: changing the neighborhood\U2019s national (religious demographic) character\" http://t.co/7X5iBnNPn8";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sun Jan 18 15:14:33 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "President, Foundation for Middle East Peace @fmep Electric guitar canonist. Proud son of Nyack. Opinions my own.";
+            "favourites_count" = 19;
+            "follow_request_sent" = 0;
+            "followers_count" = 9737;
+            following = 0;
+            "friends_count" = 1683;
+            "geo_enabled" = 0;
+            id = 19146492;
+            "id_str" = 19146492;
+            "is_translation_enabled" = 0;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 605;
+            location = "Washington, DC";
+            name = "Matt Duss";
+            notifications = 0;
+            "profile_background_color" = 1A1B1F;
+            "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/11206602/tz_bridge_2.jpg";
+            "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/11206602/tz_bridge_2.jpg";
+            "profile_background_tile" = 0;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/19146492/1359649874";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/440240534494265344/ZgCRfM5U_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/440240534494265344/ZgCRfM5U_normal.jpeg";
+            "profile_link_color" = 2FC2EF;
+            "profile_sidebar_border_color" = 181A1E;
+            "profile_sidebar_fill_color" = 252429;
+            "profile_text_color" = 666666;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = mattduss;
+            "statuses_count" = 39272;
+            "time_zone" = Quito;
+            url = "http://www.fmep.org/";
+            "utc_offset" = "-18000";
+            verified = 0;
+        };
+    };
+    source = "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>";
+    text = "RT @mattduss: \"The goal is clear: changing the neighborhood\U2019s national (religious demographic) character\" http://t.co/7X5iBnNPn8";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Tue Mar 08 22:18:51 +0000 2011";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "I write books. Mostly.";
+        "favourites_count" = 56;
+        "follow_request_sent" = 0;
+        "followers_count" = 66866;
+        following = 1;
+        "friends_count" = 491;
+        "geo_enabled" = 1;
+        id = 262856460;
+        "id_str" = 262856460;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 1241;
+        location = "NYC/LA";
+        name = "Reza Aslan";
+        notifications = 0;
+        "profile_background_color" = 1A1B1F;
+        "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme9/bg.gif";
+        "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme9/bg.gif";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/262856460/1411538157";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/512746565631373313/G0J5X_aU_normal.jpeg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/512746565631373313/G0J5X_aU_normal.jpeg";
+        "profile_link_color" = 2FC2EF;
+        "profile_sidebar_border_color" = 181A1E;
+        "profile_sidebar_fill_color" = 252429;
+        "profile_text_color" = 666666;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = rezaaslan;
+        "statuses_count" = 21159;
+        "time_zone" = "<null>";
+        url = "http://rezaaslan.com/about";
+        "utc_offset" = "<null>";
+        verified = 1;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:15:32 +0000 2014";
+    entities =     {
+        hashtags =         (
+                            {
+                            indices =                 (
+                                                       16,
+                                                       23
+                                                       );
+                            text = ISRAEL;
+                            },
+                            {
+                            indices =                 (
+                                                       24,
+                                                       28
+                                                       );
+                            text = PLO;
+                            },
+                            {
+                            indices =                 (
+                                                       37,
+                                                       47
+                                                       );
+                            text = Netenyahu;
+                            },
+                            {
+                            indices =                 (
+                                                       89,
+                                                       92
+                                                       );
+                            text = UN;
+                            },
+                            {
+                            indices =                 (
+                                                       109,
+                                                       114
+                                                       );
+                            text = ISIS;
+                            },
+                            {
+                            indices =                 (
+                                                       120,
+                                                       126
+                                                       );
+                            text = Hamas;
+                            }
+                            );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                        "display_url" = "ow.ly/C7hYn";
+                        "expanded_url" = "http://ow.ly/C7hYn";
+                        indices =                 (
+                                                   139,
+                                                   140
+                                                   );
+                        url = "http://t.co/Ir3RgPx65S";
+                        }
+                        );
+        "user_mentions" =         (
+                                   {
+                                   id = 20791292;
+                                   "id_str" = 20791292;
+                                   indices =                 (
+                                                              3,
+                                                              14
+                                                              );
+                                   name = "Aslan Media";
+                                   "screen_name" = ASLANmedia;
+                                   }
+                                   );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 516999801167413248;
+    "id_str" = 516999801167413248;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "retweet_count" = 6;
+    retweeted = 0;
+    "retweeted_status" =     {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Tue Sep 30 17:15:15 +0000 2014";
+        entities =         {
+            hashtags =             (
+                                    {
+                                    indices =                     (
+                                                                   0,
+                                                                   7
+                                                                   );
+                                    text = ISRAEL;
+                                    },
+                                    {
+                                    indices =                     (
+                                                                   8,
+                                                                   12
+                                                                   );
+                                    text = PLO;
+                                    },
+                                    {
+                                    indices =                     (
+                                                                   21,
+                                                                   31
+                                                                   );
+                                    text = Netenyahu;
+                                    },
+                                    {
+                                    indices =                     (
+                                                                   73,
+                                                                   76
+                                                                   );
+                                    text = UN;
+                                    },
+                                    {
+                                    indices =                     (
+                                                                   93,
+                                                                   98
+                                                                   );
+                                    text = ISIS;
+                                    },
+                                    {
+                                    indices =                     (
+                                                                   104,
+                                                                   110
+                                                                   );
+                                    text = Hamas;
+                                    }
+                                    );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                                "display_url" = "ow.ly/C7hYn";
+                                "expanded_url" = "http://ow.ly/C7hYn";
+                                indices =                     (
+                                                               111,
+                                                               133
+                                                               );
+                                url = "http://t.co/Ir3RgPx65S";
+                                }
+                                );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 3;
+        favorited = 0;
+        geo = "<null>";
+        id = 516999730749247488;
+        "id_str" = 516999730749247488;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = en;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "retweet_count" = 6;
+        retweeted = 0;
+        source = "<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite</a>";
+        text = "#ISRAEL #PLO says PM #Netenyahu \U201cblatantly manipulated\U201d the facts in his #UN speech equating #ISIS with #Hamas http://t.co/Ir3RgPx65S";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Fri Feb 13 18:08:34 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "The AslanMedia TweetWire: Bringing You The Middle East, 140 Characters at a time. Operated by Aslan Media Initiatives, founded by Author & Activist, Reza Aslan.";
+            "favourites_count" = 379;
+            "follow_request_sent" = 0;
+            "followers_count" = 20721;
+            following = 0;
+            "friends_count" = 838;
+            "geo_enabled" = 1;
+            id = 20791292;
+            "id_str" = 20791292;
+            "is_translation_enabled" = 0;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 1395;
+            location = "Los Angeles";
+            name = "Aslan Media";
+            notifications = 0;
+            "profile_background_color" = 333333;
+            "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/159084359/black_1500.jpg";
+            "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/159084359/black_1500.jpg";
+            "profile_background_tile" = 0;
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/1847378229/aslan_media_large_normal.jpg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/1847378229/aslan_media_large_normal.jpg";
+            "profile_link_color" = 00B371;
+            "profile_sidebar_border_color" = 333333;
+            "profile_sidebar_fill_color" = 000000;
+            "profile_text_color" = 6E6B6E;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = ASLANmedia;
+            "statuses_count" = 35347;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://aslanmedia.com";
+            "utc_offset" = "-25200";
+            verified = 0;
+        };
+    };
+    source = "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>";
+    text = "RT @ASLANmedia: #ISRAEL #PLO says PM #Netenyahu \U201cblatantly manipulated\U201d the facts in his #UN speech equating #ISIS with #Hamas http://t.co/\U2026";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Tue Mar 08 22:18:51 +0000 2011";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "I write books. Mostly.";
+        "favourites_count" = 56;
+        "follow_request_sent" = 0;
+        "followers_count" = 66866;
+        following = 1;
+        "friends_count" = 491;
+        "geo_enabled" = 1;
+        id = 262856460;
+        "id_str" = 262856460;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 1241;
+        location = "NYC/LA";
+        name = "Reza Aslan";
+        notifications = 0;
+        "profile_background_color" = 1A1B1F;
+        "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme9/bg.gif";
+        "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme9/bg.gif";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/262856460/1411538157";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/512746565631373313/G0J5X_aU_normal.jpeg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/512746565631373313/G0J5X_aU_normal.jpeg";
+        "profile_link_color" = 2FC2EF;
+        "profile_sidebar_border_color" = 181A1E;
+        "profile_sidebar_fill_color" = 252429;
+        "profile_text_color" = 666666;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = rezaaslan;
+        "statuses_count" = 21159;
+        "time_zone" = "<null>";
+        url = "http://rezaaslan.com/about";
+        "utc_offset" = "<null>";
+        verified = 1;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:15:22 +0000 2014";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                        "display_url" = "972mag.com/settlers-take-\U2026";
+                        "expanded_url" = "http://972mag.com/settlers-take-over-7-e-jerusalem-homes-in-dead-of-night/97167/";
+                        indices =                 (
+                                                   71,
+                                                   93
+                                                   );
+                        url = "http://t.co/pGUz9MQ2zu";
+                        }
+                        );
+        "user_mentions" =         (
+                                   {
+                                   id = 19146492;
+                                   "id_str" = 19146492;
+                                   indices =                 (
+                                                              3,
+                                                              12
+                                                              );
+                                   name = "Matt Duss";
+                                   "screen_name" = mattduss;
+                                   },
+                                   {
+                                   id = 181233011;
+                                   "id_str" = 181233011;
+                                   indices =                 (
+                                                              98,
+                                                              105
+                                                              );
+                                   name = "+972 Magazine";
+                                   "screen_name" = 972mag;
+                                   }
+                                   );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 516999758226132992;
+    "id_str" = 516999758226132992;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "retweet_count" = 11;
+    retweeted = 0;
+    "retweeted_status" =     {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Tue Sep 30 17:13:27 +0000 2014";
+        entities =         {
+            hashtags =             (
+            );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                                "display_url" = "972mag.com/settlers-take-\U2026";
+                                "expanded_url" = "http://972mag.com/settlers-take-over-7-e-jerusalem-homes-in-dead-of-night/97167/";
+                                indices =                     (
+                                                               57,
+                                                               79
+                                                               );
+                                url = "http://t.co/pGUz9MQ2zu";
+                                }
+                                );
+            "user_mentions" =             (
+                                           {
+                                           id = 181233011;
+                                           "id_str" = 181233011;
+                                           indices =                     (
+                                                                          84,
+                                                                          91
+                                                                          );
+                                           name = "+972 Magazine";
+                                           "screen_name" = 972mag;
+                                           }
+                                           );
+        };
+        "favorite_count" = 0;
+        favorited = 0;
+        geo = "<null>";
+        id = 516999278040862720;
+        "id_str" = 516999278040862720;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = en;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "retweet_count" = 11;
+        retweeted = 0;
+        source = "<a href=\"https://dev.twitter.com/docs/tfw\" rel=\"nofollow\">Twitter for Websites</a>";
+        text = "Settlers take over 7 E. Jerusalem homes in dead of night http://t.co/pGUz9MQ2zu via @972mag";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sun Jan 18 15:14:33 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "President, Foundation for Middle East Peace @fmep Electric guitar canonist. Proud son of Nyack. Opinions my own.";
+            "favourites_count" = 19;
+            "follow_request_sent" = 0;
+            "followers_count" = 9737;
+            following = 0;
+            "friends_count" = 1683;
+            "geo_enabled" = 0;
+            id = 19146492;
+            "id_str" = 19146492;
+            "is_translation_enabled" = 0;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 605;
+            location = "Washington, DC";
+            name = "Matt Duss";
+            notifications = 0;
+            "profile_background_color" = 1A1B1F;
+            "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/11206602/tz_bridge_2.jpg";
+            "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/11206602/tz_bridge_2.jpg";
+            "profile_background_tile" = 0;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/19146492/1359649874";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/440240534494265344/ZgCRfM5U_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/440240534494265344/ZgCRfM5U_normal.jpeg";
+            "profile_link_color" = 2FC2EF;
+            "profile_sidebar_border_color" = 181A1E;
+            "profile_sidebar_fill_color" = 252429;
+            "profile_text_color" = 666666;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = mattduss;
+            "statuses_count" = 39272;
+            "time_zone" = Quito;
+            url = "http://www.fmep.org/";
+            "utc_offset" = "-18000";
+            verified = 0;
+        };
+    };
+    source = "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>";
+    text = "RT @mattduss: Settlers take over 7 E. Jerusalem homes in dead of night http://t.co/pGUz9MQ2zu via @972mag";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Tue Mar 08 22:18:51 +0000 2011";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "I write books. Mostly.";
+        "favourites_count" = 56;
+        "follow_request_sent" = 0;
+        "followers_count" = 66866;
+        following = 1;
+        "friends_count" = 491;
+        "geo_enabled" = 1;
+        id = 262856460;
+        "id_str" = 262856460;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 1241;
+        location = "NYC/LA";
+        name = "Reza Aslan";
+        notifications = 0;
+        "profile_background_color" = 1A1B1F;
+        "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme9/bg.gif";
+        "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme9/bg.gif";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/262856460/1411538157";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/512746565631373313/G0J5X_aU_normal.jpeg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/512746565631373313/G0J5X_aU_normal.jpeg";
+        "profile_link_color" = 2FC2EF;
+        "profile_sidebar_border_color" = 181A1E;
+        "profile_sidebar_fill_color" = 252429;
+        "profile_text_color" = 666666;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = rezaaslan;
+        "statuses_count" = 21159;
+        "time_zone" = "<null>";
+        url = "http://rezaaslan.com/about";
+        "utc_offset" = "<null>";
+        verified = 1;
+    };
+},
+{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Tue Sep 30 17:14:36 +0000 2014";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 29;
+    favorited = 0;
+    geo = "<null>";
+    id = 516999566751563779;
+    "id_str" = 516999566751563779;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    lang = en;
+    place = "<null>";
+    "retweet_count" = 15;
+    retweeted = 0;
+    source = "<a href=\"http://sites.google.com/site/yorufukurou/\" rel=\"nofollow\">YoruFukurou</a>";
+    text = "Every time I post joke company ideas I worry I\U2019ve outed a dozen startups in stealth mode";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Fri Jul 10 10:24:12 +0000 2009";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Enterprise tweet platform";
+        "favourites_count" = 28;
+        "follow_request_sent" = 0;
+        "followers_count" = 23046;
+        following = 1;
+        "friends_count" = 6;
+        "geo_enabled" = 0;
+        id = 55525953;
+        "id_str" = 55525953;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 1575;
+        location = "San Francisco";
+        name = Pinboard;
+        notifications = 0;
+        "profile_background_color" = FFFFFF;
+        "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_tile" = 0;
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/494414965/logo_normal.png";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/494414965/logo_normal.png";
+        "profile_link_color" = 0084B4;
+        "profile_sidebar_border_color" = BDDCAD;
+        "profile_sidebar_fill_color" = FFFFFF;
+        "profile_text_color" = 333333;
+        "profile_use_background_image" = 0;
+        protected = 0;
+        "screen_name" = Pinboard;
+        "statuses_count" = 17187;
+        "time_zone" = Bucharest;
+        url = "http://pinboard.in";
+        "utc_offset" = 10800;
+        verified = 0;
+    };
+}
+]
