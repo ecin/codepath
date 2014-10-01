@@ -25,17 +25,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tweet text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdX-3a-ERR">
-                                <rect key="frame" x="20" y="204" width="560" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdX-3a-ERR">
+                                <rect key="frame" x="20" y="204" width="560" height="20"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" link="YES" staticText="YES"/>
                                 </accessibility>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="sgG-QN-taF" firstAttribute="leading" secondItem="Pag-Aw-LbM" secondAttribute="leading" constant="20" id="TIB-U5-uJI"/>
                             <constraint firstAttribute="trailing" secondItem="PdX-3a-ERR" secondAttribute="trailing" constant="20" id="TVI-8g-whC"/>
@@ -43,6 +45,9 @@
                             <constraint firstItem="sgG-QN-taF" firstAttribute="top" secondItem="JHH-Xr-8Lm" secondAttribute="bottom" constant="20" id="eFk-2W-a2Y"/>
                             <constraint firstItem="PdX-3a-ERR" firstAttribute="top" secondItem="sgG-QN-taF" secondAttribute="bottom" constant="20" id="un5-ss-0Fg"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Kf4-7b-QRJ" appends="YES" id="Zzc-uQ-42A"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Z3m-nf-DyZ"/>
                     <connections>
@@ -51,6 +56,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1O-Nm-YwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="Kf4-7b-QRJ">
+                    <connections>
+                        <action selector="swipeDown:" destination="hZp-Qy-Ulu" id="fgq-HF-1wH"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2816" y="204"/>
         </scene>
@@ -143,9 +153,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="aEK-Wc-FIB" kind="relationship" relationship="rootViewController" id="hgb-vn-Iaa"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TXd-d2-jkN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

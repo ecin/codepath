@@ -27,6 +27,9 @@ class TweetDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func swipeDown(sender: UISwipeGestureRecognizer) {
+        self.dismissViewControllerAnimated(true, {})
+    }
     /*
     // MARK: - Navigation
 
