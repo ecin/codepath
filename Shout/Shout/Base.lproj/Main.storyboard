@@ -16,20 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgG-QN-taF">
-                                <rect key="frame" x="16" y="64" width="152" height="78"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgG-QN-taF">
+                                <rect key="frame" x="20" y="84" width="141" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="CrP-9f-PQt"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tweet text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdX-3a-ERR">
-                                <rect key="frame" x="16" y="150" width="568" height="144"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tweet text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdX-3a-ERR">
+                                <rect key="frame" x="20" y="204" width="560" height="21"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" link="YES" staticText="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sgG-QN-taF" firstAttribute="leading" secondItem="Pag-Aw-LbM" secondAttribute="leading" constant="20" id="TIB-U5-uJI"/>
+                            <constraint firstAttribute="trailing" secondItem="PdX-3a-ERR" secondAttribute="trailing" constant="20" id="TVI-8g-whC"/>
+                            <constraint firstItem="PdX-3a-ERR" firstAttribute="leading" secondItem="Pag-Aw-LbM" secondAttribute="leading" constant="20" id="aGN-2s-2Ut"/>
+                            <constraint firstItem="sgG-QN-taF" firstAttribute="top" secondItem="JHH-Xr-8Lm" secondAttribute="bottom" constant="20" id="eFk-2W-a2Y"/>
+                            <constraint firstItem="PdX-3a-ERR" firstAttribute="top" secondItem="sgG-QN-taF" secondAttribute="bottom" constant="20" id="un5-ss-0Fg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Z3m-nf-DyZ"/>
                     <connections>
@@ -44,9 +57,9 @@
         <!--View Controller-->
         <scene sceneID="6y6-dm-wiH">
             <objects>
-                <tableViewController id="aEK-Wc-FIB" customClass="ViewController" customModule="Shout" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="122" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ko4-fj-ghs">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <tableViewController id="aEK-Wc-FIB" userLabel="View Controller" customClass="ViewController" customModule="Shout" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="122" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ko4-fj-ghs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -98,6 +111,7 @@
                                     <outlet property="timestampLabel" destination="D2a-nT-7Nc" id="9a8-Ux-YwP"/>
                                     <outlet property="tweetTextLabel" destination="edZ-Mj-tiQ" id="bEq-XB-bx7"/>
                                     <outlet property="usernameLabel" destination="pIi-pb-L6e" id="DC0-u3-i4a"/>
+                                    <segue destination="hZp-Qy-Ulu" kind="show" id="y4O-Wa-YUS"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -106,7 +120,11 @@
                             <outlet property="delegate" destination="aEK-Wc-FIB" id="3yC-AN-Iz7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="3cH-cF-6Vc"/>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Tweets" id="3cH-cF-6Vc">
+                        <barButtonItem key="rightBarButtonItem" title="Tweet" id="Nda-xP-WYe"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tweetsTableView" destination="Ko4-fj-ghs" id="yZA-Zm-N6m"/>
                     </connections>
@@ -120,7 +138,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xTf-9m-8DR" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PPv-3J-Zzx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="PPv-3J-Zzx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

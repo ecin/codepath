@@ -24,6 +24,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 self.tweetsTableView.reloadData()
             })
         }
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -49,6 +50,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let tweet = Tweet.get(indexPath.row)
         detailsViewController.tweet = tweet
         self.navigationController?.pushViewController(detailsViewController, animated: true)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var indexPath: NSIndexPath = self.tweetsTableView.indexPathForSelectedRow()!
+        var controller = segue.destinationViewController as TweetDetailViewController
+        controller.tweet = Tweet.get(indexPath.row)
+        println("Segue preparation complete!")
     }
 
 }

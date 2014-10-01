@@ -17,7 +17,7 @@ class TweetDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        usernameLabel.text = tweet?.user.username
+        usernameLabel.text = "@\(tweet!.user.username)"
         tweetTextLabel.text = tweet?.text
         // Do any additional setup after loading the view.
     }
