@@ -1,0 +1,35 @@
+PODS:
+  - FormatterKit (1.7.0):
+    - FormatterKit/AddressFormatter
+    - FormatterKit/ArrayFormatter
+    - FormatterKit/ColorFormatter
+    - FormatterKit/LocationFormatter
+    - FormatterKit/NameFormatter
+    - FormatterKit/OrdinalNumberFormatter
+    - FormatterKit/TimeIntervalFormatter
+    - FormatterKit/UnitOfInformationFormatter
+    - FormatterKit/URLRequestFormatter
+  - FormatterKit/AddressFormatter (1.7.0)
+  - FormatterKit/ArrayFormatter (1.7.0)
+  - FormatterKit/ColorFormatter (1.7.0)
+  - FormatterKit/LocationFormatter (1.7.0)
+  - FormatterKit/NameFormatter (1.7.0)
+  - FormatterKit/OrdinalNumberFormatter (1.7.0)
+  - FormatterKit/TimeIntervalFormatter (1.7.0)
+  - FormatterKit/UnitOfInformationFormatter (1.7.0)
+  - FormatterKit/URLRequestFormatter (1.7.0)
+  - SlackTextViewController (1.1.1):
+    - SlackTextViewController/Additions
+    - SlackTextViewController/Additions
+  - SlackTextViewController/Additions (1.1.1):
+    - SlackTextViewController/Additions
+
+DEPENDENCIES:
+  - FormatterKit
+  - SlackTextViewController
+
+SPEC CHECKSUMS:
+  FormatterKit: 846ca773b9daaa13b50ae0df1f4a328d030d859c
+  SlackTextViewController: a5a4db17a834d13194182f62f4faad2ea8f9929e
+
+COCOAPODS: 0.33.1
