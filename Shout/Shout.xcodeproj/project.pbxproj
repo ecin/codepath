@@ -19,6 +19,7 @@
 		A1600C0619DB22F700339522 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1600C0419DB22F700339522 /* TemplateIcon2x.png */; };
 		A1E105DD19DB346100D41C08 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E105DC19DB346100D41C08 /* TweetTableViewCell.swift */; };
 		A1E105DF19DB490300D41C08 /* TweetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E105DE19DB490300D41C08 /* TweetDetailViewController.swift */; };
+		A78F759E83C848788B2ECEFC /* libPods-Shout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA72E643122A46BBBA893202 /* libPods-Shout.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4556976496254852BFB044AD /* Pods-Shout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shout.xcconfig"; path = "Pods/Pods-Shout.xcconfig"; sourceTree = "<group>"; };
 		A1600BD919DB082E00339522 /* Shout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1600BDD19DB082E00339522 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1600BDE19DB082E00339522 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		A1600C0419DB22F700339522 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
 		A1E105DC19DB346100D41C08 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		A1E105DE19DB490300D41C08 /* TweetDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetDetailViewController.swift; sourceTree = "<group>"; };
+		A1E105E019DB81F500D41C08 /* Shout-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shout-Bridging-Header.h"; sourceTree = "<group>"; };
+		DA72E643122A46BBBA893202 /* libPods-Shout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1600BFF19DB090900339522 /* Social.framework in Frameworks */,
+				A78F759E83C848788B2ECEFC /* libPods-Shout.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,9 @@
 				A1600BDB19DB082E00339522 /* Shout */,
 				A1600BF119DB082E00339522 /* ShoutTests */,
 				A1600BDA19DB082E00339522 /* Products */,
+				4556976496254852BFB044AD /* Pods-Shout.xcconfig */,
+				FBD8274D63C94FFDAF5F4F9A /* Frameworks */,
+				A1E105E019DB81F500D41C08 /* Shout-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +139,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FBD8274D63C94FFDAF5F4F9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA72E643122A46BBBA893202 /* libPods-Shout.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1600BF819DB082E00339522 /* Build configuration list for PBXNativeTarget "Shout" */;
 			buildPhases = (
+				6E7A23DCEB64490DA39DF328 /* Check Pods Manifest.lock */,
 				A1600BD519DB082E00339522 /* Sources */,
 				A1600BD619DB082E00339522 /* Frameworks */,
 				A1600BD719DB082E00339522 /* Resources */,
+				51C93BE69E0E4A5FAC35561D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,6 +245,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51C93BE69E0E4A5FAC35561D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Shout-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E7A23DCEB64490DA39DF328 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1600BD519DB082E00339522 /* Sources */ = {
@@ -358,21 +409,28 @@
 		};
 		A1600BF919DB082E00339522 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4556976496254852BFB044AD /* Pods-Shout.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Shout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Shout-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		A1600BFA19DB082E00339522 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4556976496254852BFB044AD /* Pods-Shout.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Shout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Shout-Bridging-Header.h";
 			};
 			name = Release;
 		};

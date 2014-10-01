@@ -14,9 +14,11 @@ class TweetTableViewCell: UITableViewCell {
     @IBOutlet weak var flavorLabel: UILabel!
     @IBOutlet weak var tweetTextLabel: UILabel!
     @IBOutlet weak var timestampLabel: UILabel!
+    var dateFormatter: NSDateFormatter = NSDateFormatter()
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        dateFormatter.dateFormat = "eee MMM dd HH:mm:ss ZZZZ yyyy"
         // Initialization code
     }
 
@@ -30,7 +32,11 @@ class TweetTableViewCell: UITableViewCell {
         usernameLabel.text = "@\(tweet.user.username)"
         flavorLabel.text = "expouses"
         tweetTextLabel.text = tweet.text
-        timestampLabel.text = tweet.timestamp
+        
+        var timeFormatter = TTTTimeIntervalFormatter()
+        var date = dateFormatter.dateFromString(tweet.timestamp)
+        var since = timeFormatter.stringForTimeInterval(date!.timeIntervalSince1970 - NSDate().timeIntervalSince1970)
+        timestampLabel.text = since
     }
 
 }
