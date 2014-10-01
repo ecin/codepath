@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 class TweetDetailViewController: UIViewController {
 
@@ -40,4 +41,8 @@ class TweetDetailViewController: UIViewController {
     }
     */
 
+    @IBAction func tweet(sender: UIButton) {
+        var tweetSheet = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        self.presentViewController(tweetSheet, animated: true, completion: {})
+    }
 }
