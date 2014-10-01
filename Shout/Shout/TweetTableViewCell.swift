@@ -15,6 +15,7 @@ class TweetTableViewCell: UITableViewCell {
     @IBOutlet weak var tweetTextLabel: UILabel!
     @IBOutlet weak var timestampLabel: UILabel!
     var dateFormatter: NSDateFormatter = NSDateFormatter()
+    let flavorText = ["expouses", "says", "thinks", "shares", "writes", "types", ]
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,13 +31,18 @@ class TweetTableViewCell: UITableViewCell {
     
     func fromTweet(tweet: Tweet) {
         usernameLabel.text = "@\(tweet.user.username)"
-        flavorLabel.text = "expouses"
+        flavorLabel.text = flavor()
         tweetTextLabel.text = tweet.text
         
         var timeFormatter = TTTTimeIntervalFormatter()
         var date = dateFormatter.dateFromString(tweet.timestamp)
         var since = timeFormatter.stringForTimeInterval(date!.timeIntervalSince1970 - NSDate().timeIntervalSince1970)
         timestampLabel.text = since
+    }
+    
+    func flavor() -> String {
+        let randomIndex = Int(arc4random_uniform(UInt32(flavorText.count)))
+        return flavorText[randomIndex]
     }
 
 }

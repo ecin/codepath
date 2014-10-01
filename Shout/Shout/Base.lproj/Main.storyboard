@@ -85,19 +85,19 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="says" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AX6-ZV-rAz">
-                                            <rect key="frame" x="110" y="20" width="35" height="21"/>
+                                            <rect key="frame" x="106" y="20" width="35" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Tweet text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edZ-Mj-tiQ">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Tweet text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edZ-Mj-tiQ">
                                             <rect key="frame" x="20" y="50" width="527" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="timestamp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2a-nT-7Nc">
-                                            <rect key="frame" x="466" y="81" width="81" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="timestamp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2a-nT-7Nc">
+                                            <rect key="frame" x="466" y="82" width="81" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -106,7 +106,7 @@
                                     <constraints>
                                         <constraint firstItem="pIi-pb-L6e" firstAttribute="leading" secondItem="qCw-xB-9WA" secondAttribute="leading" constant="20" id="6yY-eA-LYk"/>
                                         <constraint firstItem="AX6-ZV-rAz" firstAttribute="top" secondItem="qCw-xB-9WA" secondAttribute="top" constant="20" id="CUQ-AX-JIQ"/>
-                                        <constraint firstItem="AX6-ZV-rAz" firstAttribute="leading" secondItem="pIi-pb-L6e" secondAttribute="trailing" constant="10" id="HTO-qb-KYo"/>
+                                        <constraint firstItem="AX6-ZV-rAz" firstAttribute="leading" secondItem="pIi-pb-L6e" secondAttribute="trailing" constant="5" id="HTO-qb-KYo"/>
                                         <constraint firstAttribute="bottom" secondItem="D2a-nT-7Nc" secondAttribute="bottom" constant="20" id="OAc-tH-kdB"/>
                                         <constraint firstAttribute="trailing" secondItem="D2a-nT-7Nc" secondAttribute="trailing" constant="20" id="d4p-o0-Ddd"/>
                                         <constraint firstItem="edZ-Mj-tiQ" firstAttribute="leading" secondItem="qCw-xB-9WA" secondAttribute="leading" constant="20" id="o9Q-VO-MkS"/>
