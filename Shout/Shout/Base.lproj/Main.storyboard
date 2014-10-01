@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgG-QN-taF">
-                                <rect key="frame" x="20" y="84" width="141" height="100"/>
+                                <rect key="frame" x="20" y="40" width="141" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="CrP-9f-PQt"/>
+                                    <constraint firstAttribute="height" constant="50" id="CrP-9f-PQt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdX-3a-ERR">
-                                <rect key="frame" x="20" y="204" width="560" height="20"/>
+                                <rect key="frame" x="20" y="130" width="560" height="20"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" link="YES" staticText="YES"/>
                                 </accessibility>
@@ -35,15 +35,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O66-Pg-HZD">
+                                <rect key="frame" x="20" y="100" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="O66-Pg-HZD" firstAttribute="leading" secondItem="Pag-Aw-LbM" secondAttribute="leading" constant="20" id="ARO-8b-J0k"/>
                             <constraint firstItem="sgG-QN-taF" firstAttribute="leading" secondItem="Pag-Aw-LbM" secondAttribute="leading" constant="20" id="TIB-U5-uJI"/>
                             <constraint firstAttribute="trailing" secondItem="PdX-3a-ERR" secondAttribute="trailing" constant="20" id="TVI-8g-whC"/>
+                            <constraint firstItem="O66-Pg-HZD" firstAttribute="top" secondItem="sgG-QN-taF" secondAttribute="bottom" constant="10" id="a7h-Ef-Zkc"/>
                             <constraint firstItem="PdX-3a-ERR" firstAttribute="leading" secondItem="Pag-Aw-LbM" secondAttribute="leading" constant="20" id="aGN-2s-2Ut"/>
+                            <constraint firstItem="PdX-3a-ERR" firstAttribute="top" secondItem="O66-Pg-HZD" secondAttribute="bottom" constant="10" id="d25-fL-Sp5"/>
                             <constraint firstItem="sgG-QN-taF" firstAttribute="top" secondItem="JHH-Xr-8Lm" secondAttribute="bottom" constant="20" id="eFk-2W-a2Y"/>
-                            <constraint firstItem="PdX-3a-ERR" firstAttribute="top" secondItem="sgG-QN-taF" secondAttribute="bottom" constant="20" id="un5-ss-0Fg"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Kf4-7b-QRJ" appends="YES" id="Zzc-uQ-42A"/>
@@ -51,6 +59,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Z3m-nf-DyZ"/>
                     <connections>
+                        <outlet property="nameTextLabel" destination="O66-Pg-HZD" id="QQA-2s-epE"/>
                         <outlet property="tweetTextLabel" destination="PdX-3a-ERR" id="ISx-qh-AlA"/>
                         <outlet property="usernameLabel" destination="sgG-QN-taF" id="xZQ-kc-HnI"/>
                     </connections>

@@ -14,12 +14,14 @@ class TweetDetailViewController: UIViewController {
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var tweetTextLabel: UILabel!
     var tweet: Tweet?
+    @IBOutlet weak var nameTextLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         usernameLabel.text = "@\(tweet!.user.username)"
         tweetTextLabel.text = tweet?.text
+        nameTextLabel.text = tweet!.user.name
         // Do any additional setup after loading the view.
     }
 
