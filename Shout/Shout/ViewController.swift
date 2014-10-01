@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Copypastel. All rights reserved.
 //
 
+import Social
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -58,6 +59,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         controller.tweet = Tweet.get(indexPath.row)
         println("Segue preparation complete!")
     }
-
+    
+    @IBAction func tweet(sender: UIBarButtonItem) {
+        var tweetSheet = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        self.presentViewController(tweetSheet, animated: true, completion: {})
+    }
 }
 

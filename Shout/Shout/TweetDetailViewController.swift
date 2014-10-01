@@ -40,9 +40,4 @@ class TweetDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    @IBAction func tweet(sender: UIButton) {
-        var tweetSheet = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-        self.presentViewController(tweetSheet, animated: true, completion: {})
-    }
 }
