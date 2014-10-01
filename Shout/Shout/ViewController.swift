@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         
         tweetsTableView.rowHeight = UITableViewAutomaticDimension
+        tweetsTableView.estimatedRowHeight = 125
         
         Tweet.authenticate("XOLEHC3pAniBxG2CsQ5tYisl6", consumerSecret: "kylFhjIuX36JHftNacmz8EKHpAwSE6h7fHX4wa0jCignhOp0as") {
             accounts in

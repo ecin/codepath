@@ -40,13 +40,13 @@ class TweetDetailViewController: UIViewController {
     @IBAction func favorite(sender: UIButton) {
         var id = tweet!.id
         if tweet!.favorite {
+            self.tweet!.favorite = false
             Tweet.unfavorite(account!, id: id, success: {
-                self.setFavoriteIcon(false)
                 self.tweet!.favorite = false
             })
         } else {
+            self.setFavoriteIcon(true)
             Tweet.favorite(account!, id: id, success: {
-                self.setFavoriteIcon(true)
                 self.tweet!.favorite = true
             })
         }
