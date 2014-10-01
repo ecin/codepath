@@ -6,12 +6,15 @@
 //  Copyright (c) 2014 Copypastel. All rights reserved.
 //
 
+import Accounts
 import Social
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var tweetsTableView: UITableView!
+    @IBOutlet weak var refreshControl: UIRefreshControl!
+    var account: ACAccount?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +23,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         Tweet.authenticate("XOLEHC3pAniBxG2CsQ5tYisl6", consumerSecret: "kylFhjIuX36JHftNacmz8EKHpAwSE6h7fHX4wa0jCignhOp0as") {
             accounts in
-            Tweet.fetch(accounts[0], success: {
-                tweets in
-                self.tweetsTableView.reloadData()
-            })
+            self.account = accounts[0]
+            self.refresh(UIRefreshControl())
         }
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -63,6 +64,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBAction func tweet(sender: UIBarButtonItem) {
         var tweetSheet = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
         self.presentViewController(tweetSheet, animated: true, completion: {})
+    }
+    
+    @IBAction func refresh(sender: UIRefreshControl) {
+        if account != nil {
+            Tweet.fetch(account!, success: {
+                tweets in
+                self.tweetsTableView.reloadData()
+                self.refreshControl.endRefreshing()
+            })
+        }
     }
 }
 
