@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xTf-9m-8DR">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Tweet Detail View Controller-->
@@ -26,7 +27,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdX-3a-ERR">
-                                <rect key="frame" x="20" y="130" width="560" height="20"/>
+                                <rect key="frame" x="20" y="131" width="560" height="20"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" link="YES" staticText="YES"/>
                                 </accessibility>
@@ -41,6 +42,19 @@
                                 <color key="textColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RN-HG-Bvc">
+                                <rect key="frame" x="514" y="37" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="3GQ-AF-a0q"/>
+                                    <constraint firstAttribute="height" constant="50" id="Y2c-Ft-bFe"/>
+                                </constraints>
+                                <state key="normal" image="iconmonstr-bookmark-22-icon-256">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="favorite:" destination="hZp-Qy-Ulu" eventType="touchUpInside" id="5Ji-2G-RdC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -52,6 +66,8 @@
                             <constraint firstItem="PdX-3a-ERR" firstAttribute="leading" secondItem="Pag-Aw-LbM" secondAttribute="leading" constant="20" id="aGN-2s-2Ut"/>
                             <constraint firstItem="PdX-3a-ERR" firstAttribute="top" secondItem="O66-Pg-HZD" secondAttribute="bottom" constant="10" id="d25-fL-Sp5"/>
                             <constraint firstItem="sgG-QN-taF" firstAttribute="top" secondItem="JHH-Xr-8Lm" secondAttribute="bottom" constant="20" id="eFk-2W-a2Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4RN-HG-Bvc" secondAttribute="trailing" constant="20" id="fEC-P0-Q72"/>
+                            <constraint firstItem="4RN-HG-Bvc" firstAttribute="top" secondItem="JHH-Xr-8Lm" secondAttribute="bottom" constant="20" id="xxb-nZ-Hel"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Kf4-7b-QRJ" appends="YES" id="Zzc-uQ-42A"/>
@@ -59,6 +75,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Z3m-nf-DyZ"/>
                     <connections>
+                        <outlet property="favoriteButton" destination="4RN-HG-Bvc" id="Yx5-hR-iJe"/>
                         <outlet property="nameTextLabel" destination="O66-Pg-HZD" id="QQA-2s-epE"/>
                         <outlet property="tweetTextLabel" destination="PdX-3a-ERR" id="ISx-qh-AlA"/>
                         <outlet property="usernameLabel" destination="sgG-QN-taF" id="xZQ-kc-HnI"/>
@@ -186,4 +203,7 @@
             <point key="canvasLocation" x="1450" y="204"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iconmonstr-bookmark-22-icon-256" width="256" height="256"/>
+    </resources>
 </document>

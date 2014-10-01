@@ -51,15 +51,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let detailsViewController = self.storyboard?.instantiateViewControllerWithIdentifier("details") as TweetDetailViewController
         let tweet = Tweet.get(indexPath.row)
         detailsViewController.tweet = tweet
+        detailsViewController.account = account
         self.navigationController?.pushViewController(detailsViewController, animated: true)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var indexPath: NSIndexPath = self.tweetsTableView.indexPathForSelectedRow()!
-        var controller = segue.destinationViewController as TweetDetailViewController
-        controller.tweet = Tweet.get(indexPath.row)
-        println("Segue preparation complete!")
-    }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        var indexPath: NSIndexPath = self.tweetsTableView.indexPathForSelectedRow()!
+//        var controller = segue.destinationViewController as TweetDetailViewController
+//        controller.tweet = Tweet.get(indexPath.row)
+//        controller
+//        println("Segue preparation complete!")
+//    }
     
     @IBAction func tweet(sender: UIBarButtonItem) {
         var tweetSheet = SLComposeViewController(forServiceType: SLServiceTypeTwitter)

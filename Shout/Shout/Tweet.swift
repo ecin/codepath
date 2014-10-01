@@ -36,6 +36,38 @@ class Tweet {
         return tweets[index]
     }
     
+    class func favorite(account: ACAccount, id: Int, success: () -> ()) {
+        let requestURL = NSURL(string: "https://api.twitter.com/1.1/favorites/create.json")
+        
+        let parameters: [String:String] = [
+            "id": String(id)
+        ]
+        
+        let request = SLRequest(forServiceType: SLServiceTypeTwitter, requestMethod: SLRequestMethod.POST, URL: requestURL, parameters: parameters)
+        
+        request.account = account
+        request.performRequestWithHandler() {
+            data, response, error in
+            success()
+        }
+    }
+    
+    class func unfavorite(account: ACAccount, id: Int, success: () -> ()) {
+        let requestURL = NSURL(string: "https://api.twitter.com/1.1/favorites/create.json")
+        
+        let parameters: [String:String] = [
+            "id": String(id)
+        ]
+        
+        let request = SLRequest(forServiceType: SLServiceTypeTwitter, requestMethod: SLRequestMethod.DELETE, URL: requestURL, parameters: parameters)
+        
+        request.account = account
+        request.performRequestWithHandler() {
+            data, response, error in
+            success()
+        }
+    }
+    
     class func fetch(account: ACAccount, limit: Int = 20, offset: Int = 0, success: (tweets: [Tweet]) -> ()) {
         let requestURL = NSURL(string: "https://api.twitter.com/1/statuses/home_timeline.json")
         
@@ -53,6 +85,7 @@ class Tweet {
             var error: NSError?
             let dataSource = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableLeaves, error: &error) as NSArray
             
+            tweets = []
             for data in dataSource {
                 var tweet = Tweet(dictionary: data as NSDictionary)
                 tweets.append(tweet)
@@ -66,6 +99,7 @@ class Tweet {
     var user: User = User()
     var text: String = ""
     var timestamp: String = ""
+    var favorite: Bool = false
 //    var createdAt: NSDate = NSDate()
     
     init(dictionary: NSDictionary) {
@@ -73,6 +107,7 @@ class Tweet {
         user = User(dictionary: dictionary["user"] as NSDictionary)
         text = dictionary["text"] as String
         timestamp = dictionary["created_at"] as String
+        favorite = dictionary["favorited"] as Bool
     }
     
     class func authenticate(consumerKey: String, consumerSecret: String, success: ([ACAccount]) -> ()) -> Bool {

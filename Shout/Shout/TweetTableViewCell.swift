@@ -33,7 +33,7 @@ class TweetTableViewCell: UITableViewCell {
         usernameLabel.text = "@\(tweet.user.username)"
         flavorLabel.text = flavor()
         tweetTextLabel.text = tweet.text
-        
+    
         var timeFormatter = TTTTimeIntervalFormatter()
         var date = dateFormatter.dateFromString(tweet.timestamp)
         var since = timeFormatter.stringForTimeInterval(date!.timeIntervalSince1970 - NSDate().timeIntervalSince1970)

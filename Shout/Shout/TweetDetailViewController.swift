@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Copypastel. All rights reserved.
 //
 
+import Accounts
 import UIKit
 import Social
 
@@ -14,7 +15,9 @@ class TweetDetailViewController: UIViewController {
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var tweetTextLabel: UILabel!
     var tweet: Tweet?
+    var account: ACAccount?
     @IBOutlet weak var nameTextLabel: UILabel!
+    @IBOutlet weak var favoriteButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +25,8 @@ class TweetDetailViewController: UIViewController {
         usernameLabel.text = "@\(tweet!.user.username)"
         tweetTextLabel.text = tweet?.text
         nameTextLabel.text = tweet!.user.name
-        // Do any additional setup after loading the view.
+        
+        setFavoriteIcon(tweet!.favorite)
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +36,28 @@ class TweetDetailViewController: UIViewController {
 
     @IBAction func swipeDown(sender: UISwipeGestureRecognizer) {
         self.dismissViewControllerAnimated(true, {})
+    }
+    @IBAction func favorite(sender: UIButton) {
+        var id = tweet!.id
+        if tweet!.favorite {
+            Tweet.unfavorite(account!, id: id, success: {
+                self.setFavoriteIcon(false)
+                self.tweet!.favorite = false
+            })
+        } else {
+            Tweet.favorite(account!, id: id, success: {
+                self.setFavoriteIcon(true)
+                self.tweet!.favorite = true
+            })
+        }
+    }
+    
+    func setFavoriteIcon(favorited: Bool) {
+        if favorited {
+            favoriteButton.setImage(UIImage(named: "iconmonstr-bookmark-24-icon-256"), forState: UIControlState.Normal)
+        } else {
+            favoriteButton.setImage(UIImage(named: "iconmonstr-bookmark-22-icon-256"), forState: UIControlState.Normal)
+        }
     }
     /*
     // MARK: - Navigation
